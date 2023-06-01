@@ -132,7 +132,7 @@ body{
 /* ---------------------------------------------- */
 
 #sidebar {
-  position:relative;
+  position:absolute;
   height:100vh;
   background-color:#01848f;
   width:20%;
@@ -143,14 +143,19 @@ body{
   color:#f1f1f2;
   font-family:Helvetica;
   text-align:center;
-  transition: width 1s;
+  left: -190px;
+  transition: 1s;
+}
+#sidebar.show {
+  transform: translate(190px);
+  transition: 1s;
+}
 
+#sidebar-text{
+  position: relative;
+  width: 100%;
 }
-#sidebar.hidden {
-  content: '';
-  width: 0px;
-  transition: width 1s;
-}
+
 
 .line {
   height:1px;
