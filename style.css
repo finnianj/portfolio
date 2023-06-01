@@ -143,13 +143,13 @@ body{
   color:#f1f1f2;
   font-family:Helvetica;
   text-align:center;
-  transition: width 3s;
+  transition: width 1s;
 
 }
 #sidebar.hidden {
   content: '';
   width: 0px;
-  transition: width 3s;
+  transition: width 1s;
 }
 
 .line {
