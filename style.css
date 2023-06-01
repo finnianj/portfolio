@@ -51,7 +51,6 @@ body{
 
 }
 #box3{
-  z-index: 10;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -64,7 +63,6 @@ body{
 
 }
 #box4{
-  z-index: 10;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -139,7 +137,7 @@ body{
   background-color:#01848f;
   width:20%;
   margin-left:0;
-  z-index:2;
+  z-index: 1;
   font-size:1.5em;
   line-height:1.5em;
   color:#f1f1f2;
@@ -153,7 +151,6 @@ body{
   width: 0px;
   transition: width 3s;
 }
-
 
 .line {
   height:1px;
@@ -174,7 +171,7 @@ body{
   align-items:center;
   top:calc(50% - 22px);
   left:calc(100% - 22px);
-  z-index:3;
+  z-index:2;
   cursor:pointer;
 }
 .fa-chevron-left {
