@@ -4,6 +4,7 @@
 }
 
 body{
+  font-family: MyFont;
   margin: 0;
   background-color: rgb(255, 254, 252);
 }
@@ -11,6 +12,14 @@ body{
 .row{
   display: flex;
   justify-content: space-between;
+}
+
+#menu{
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border: 2px solid black;
 }
 
 #box1{
@@ -106,7 +115,6 @@ body{
   margin-bottom: 400px;
   text-align: center;
   font-size: 100px;
-  font-family: myFont;
   font-weight: lighter;
   color: rgb(43, 43, 43);
   width: 70%;
