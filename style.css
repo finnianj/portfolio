@@ -177,14 +177,14 @@ body{
 }
 
 .char{
-  color: black;
+  color: rgb(84, 84, 84);
   position: absolute;
   width: 20px;
   transform-origin: bottom center;
 }
 #char1{
   top: -25px;
-  left: 10;
+  left: 25px;
   transform: rotate(50deg);
 }
 #char2{
