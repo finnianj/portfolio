@@ -127,7 +127,7 @@ body{
   font-size:1.5em;
   line-height:1.5em;
   color:#f1f1f2;
-  font-family:Helvetica;
+  /* font-family:Helvetica; */
   text-align:center;
   left: -190px;
   transition: 1s;
@@ -149,6 +149,7 @@ body{
   background-color:#E9D985;
   margin:0 22px;
 }
+
 #sidebar-button {
   position:absolute;
   width:44px;
@@ -174,6 +175,35 @@ body{
 .hide {
   display:none;
 }
+
+.char{
+  color: black;
+  position: absolute;
+  width: 20px;
+  transform-origin: bottom center;
+}
+#char1{
+  top: -25px;
+  left: 10;
+  transform: rotate(50deg);
+}
+#char2{
+  top: -16px;
+  left: 30px;
+  transform: rotate(65deg);
+}
+#char3{
+  top: -10px;
+  left: 30px;
+  transform: rotate(90deg);
+}
+#char4{
+  top: -2px;
+  left: 27px;
+  transform: rotate(110deg);
+}
+
+
 
 /* ---------------------------------------------- */
 /* ---------------KEYFRAMES--------------------- */
