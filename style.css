@@ -9,10 +9,53 @@ body{
   background-color: rgb(255, 254, 252);
 }
 
-.row{
+
+
+#lemon{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(30, 219, 162);
+  position: relative;
+  left: 700px;
+  top: 200px;
+  border-radius: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 0;
 }
+#lemon-inner-first{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(255, 191, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lemon-inner-second{
+  width: 110px;
+  height: 110px;
+  background-color: rgba(1, 213, 228, 0.9);
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lemon-inner-third{
+  background-color: rgb(226, 48, 149);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 #box1{
   position: fixed;
@@ -212,49 +255,6 @@ body{
   top: -5px;
   left: 26px;
   transform: rotate(115deg);
-}
-
-#lemon{
-  width: 200px;
-  height: 200px;
-  background-color: rgb(255, 191, 0, 0.9);
-  position: relative;
-  left: 400px;
-  top: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#lemon-inner-first{
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: #E9D985;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#lemon-inner-second{
-  width: 140px;
-  height: 140px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: #85e9ad;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#lemon-inner-third{
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: #85bee9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 
