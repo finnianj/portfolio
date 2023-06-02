@@ -214,6 +214,49 @@ body{
   transform: rotate(115deg);
 }
 
+#lemon{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 191, 0, 0.9);
+  position: relative;
+  left: 400px;
+  top: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lemon-inner-first{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #E9D985;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lemon-inner-second{
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #85e9ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lemon-inner-third{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #85bee9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* ---------------------------------------------- */
 /* ---------------KEYFRAMES--------------------- */
