@@ -101,7 +101,7 @@ body{
 #hello{
   margin-top: 150px;
 }
-#text > h2{
+#text > *{
   margin-bottom: 400px;
   text-align: center;
   font-size: 100px;
@@ -109,6 +109,12 @@ body{
   color: rgb(43, 43, 43);
   width: 70%;
 }
+
+.scroll-image{
+  height: 25vw;
+  width: 40vw !important;
+}
+
 
 
 
@@ -203,7 +209,6 @@ body{
   left: 26px;
   transform: rotate(115deg);
 }
-
 
 
 /* ---------------------------------------------- */
