@@ -177,30 +177,31 @@ body{
 }
 
 .char{
-  color: rgb(84, 84, 84);
+  color: rgb(255, 191, 0, 0.9);
+  text-shadow: #FC0 1px 0 15px;;
   position: absolute;
   width: 20px;
   transform-origin: bottom center;
 }
 #char1{
-  top: -25px;
-  left: 25px;
-  transform: rotate(50deg);
+  top: -23px;
+  left: 26px;
+  transform: rotate(60deg);
 }
 #char2{
-  top: -16px;
-  left: 30px;
-  transform: rotate(65deg);
+  top: -15px;
+  left: 29px;
+  transform: rotate(75deg);
 }
 #char3{
-  top: -10px;
-  left: 30px;
-  transform: rotate(90deg);
+  top: -11px;
+  left: 28px;
+  transform: rotate(100deg);
 }
 #char4{
-  top: -2px;
-  left: 27px;
-  transform: rotate(110deg);
+  top: -5px;
+  left: 26px;
+  transform: rotate(115deg);
 }
 
 
