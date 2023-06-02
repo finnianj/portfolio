@@ -14,20 +14,6 @@ body{
   justify-content: space-between;
 }
 
-#menu{
-  color: white;
-  z-index: 1;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  /* border: 2px solid black; */
-}
-
-#menu > p {
-  font-size: 10px;
-  list-style-type: none;
-}
-
 #box1{
   position: fixed;
   top: 0;
@@ -115,7 +101,7 @@ body{
 #hello{
   margin-top: 150px;
 }
-#text > h2{
+#text > *{
   margin-bottom: 400px;
   text-align: center;
   font-size: 100px;
@@ -123,6 +109,12 @@ body{
   color: rgb(43, 43, 43);
   width: 70%;
 }
+
+.scroll-image{
+  height: 25vw;
+  width: 40vw !important;
+}
+
 
 
 
@@ -135,13 +127,13 @@ body{
   position:absolute;
   height:100vh;
   background-color:#01848f;
-  width:20%;
+  width:190px;
   margin-left:0;
   z-index: 1;
   font-size:1.5em;
   line-height:1.5em;
   color:#f1f1f2;
-  font-family:Helvetica;
+  /* font-family:Helvetica; */
   text-align:center;
   left: -190px;
   transition: 1s;
@@ -163,6 +155,7 @@ body{
   background-color:#E9D985;
   margin:0 22px;
 }
+
 #sidebar-button {
   position:absolute;
   width:44px;
@@ -188,6 +181,35 @@ body{
 .hide {
   display:none;
 }
+
+.char{
+  color: rgb(255, 191, 0, 0.9);
+  text-shadow: #FC0 1px 0 15px;;
+  position: absolute;
+  width: 20px;
+  transform-origin: bottom center;
+}
+#char1{
+  top: -23px;
+  left: 26px;
+  transform: rotate(60deg);
+}
+#char2{
+  top: -15px;
+  left: 29px;
+  transform: rotate(75deg);
+}
+#char3{
+  top: -11px;
+  left: 28px;
+  transform: rotate(100deg);
+}
+#char4{
+  top: -5px;
+  left: 26px;
+  transform: rotate(115deg);
+}
+
 
 /* ---------------------------------------------- */
 /* ---------------KEYFRAMES--------------------- */
