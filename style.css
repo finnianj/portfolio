@@ -104,10 +104,14 @@ body{
 #text > *{
   margin-bottom: 400px;
   text-align: center;
-  /* font-size: 100px; */
+  font-size: 8vw;
   font-weight: lighter;
   color: rgb(43, 43, 43);
   width: 70%;
+}
+
+#text > h3 {
+  font-size: 2vw;
 }
 
 .scroll-image{
@@ -304,9 +308,9 @@ body{
     width: 100px;
     height: 100px;
   }
-  #text > h2 {
+  /* #text > h2 {
     font-size: 40px;
-  }
+  } */
 }
 @media (min-width:480px)  {
   /* smartphones, Android phones, landscape iPhone */
@@ -326,9 +330,9 @@ body{
     width: 120px;
     height: 120px;
   }
-  #text > h2 {
+  /* #text > h2 {
     font-size: 50px;
-  }
+  } */
 }
 @media (min-width:600px)  {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -348,9 +352,9 @@ body{
     width: 140px;
     height: 140px;
   }
-  #text > h2 {
+  /* #text > h2 {
     font-size: 60px;
-  }
+  } */
 }
 @media (min-width:801px)  {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -370,9 +374,9 @@ body{
     width: 160px;
     height: 160px;
   }
-  #text > h2 {
+  /* #text > h2 {
     font-size: 70px;
-  }
+  } */
 }
 @media (min-width:1025px) {
   /* big landscape tablets, laptops, and desktops */
@@ -392,9 +396,9 @@ body{
     width: 180px;
     height: 180px;
   }
-  #text > h2 {
+  /* #text > h2 {
     font-size: 80px;
-  }
+  } */
 }
 @media (min-width:1281px) {
   /* hi-res laptops and desktops */
@@ -414,7 +418,7 @@ body{
     width: 300px;
     height: 300px;
   }
-  #text > h2 {
+  /* #text > h2 {
     font-size: 100px;
-  }
+  } */
 }
