@@ -14,20 +14,6 @@ body{
   justify-content: space-between;
 }
 
-#menu{
-  color: white;
-  z-index: 1;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  /* border: 2px solid black; */
-}
-
-#menu > p {
-  font-size: 10px;
-  list-style-type: none;
-}
-
 #box1{
   position: fixed;
   top: 0;
