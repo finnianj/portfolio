@@ -187,11 +187,24 @@ body{
 }
 
 .react-item-image{
+  transform: scale(1);
+  transition: transform 0.8s;
   height: 10vw;
   width: 10vw !important;
+  margin-left: 20px;
   border-radius: 50%;
   object-fit: cover;
   border: 8px solid #edebec;
+}
+
+.react-item-image:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.item-image-holder{
+  display: flex;
+  align-items: center;
 }
 
 
