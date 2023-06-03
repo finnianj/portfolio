@@ -164,12 +164,19 @@ body{
 }
 
 .item-image{
+  transform: scale(1);
+  transition: transform 0.3s;
   height: 20vw;
   width: 20vw !important;
   border-radius: 50%;
   object-fit: cover;
   border: 8px solid #edebec;
   animation: pulse-image 5s infinite;
+}
+
+.item-image:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .item-text{
