@@ -165,7 +165,7 @@ body{
 
 .item-image{
   transform: scale(1);
-  transition: transform 0.3s;
+  transition: transform 0.8s;
   height: 20vw;
   width: 20vw !important;
   border-radius: 50%;
