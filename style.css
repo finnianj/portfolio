@@ -58,17 +58,19 @@ body{
 
 
 #box1{
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   width: 200px;
   height: 200px;
-  background-color: rgb(255, 0, 144, 0.9);
+  background-color: rgb(255, 0, 144);
   border-bottom-right-radius: 100%;
   animation: pulse-blue 6s infinite;
 
 }
 #box2{
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
@@ -80,6 +82,7 @@ body{
 
 }
 #box3{
+  z-index: 10;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -92,6 +95,7 @@ body{
 
 }
 #box4{
+  z-index: 10;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -121,14 +125,11 @@ body{
   align-items: center;
   height: 100%;
   width: 100%;
-  /* background: linear-gradient(transparent, rgb(182, 182, 182)); */
-
-
 }
 
 #text{
   /* border: 2px solid black; */
-  height: 70%;
+  height: 100%;
   width: 80%;
   overflow: scroll;
   /* mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%); */
@@ -159,7 +160,7 @@ body{
 
 .item-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .item-image{
