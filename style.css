@@ -145,8 +145,8 @@ body{
 #hello{
   margin-top: 150px;
 }
-#text > *{
-  margin-bottom: 400px;
+#text > h2{
+  margin-top: 400px;
   text-align: center;
   font-size: 8vw;
   font-weight: lighter;
@@ -154,7 +154,7 @@ body{
   width: 70%;
 }
 
-#text > h3 {
+.portfolio-item > h3{
   font-size: 4vw;
 }
 
