@@ -2,15 +2,7 @@ const express = require ('express')
 const app = express()
 const port = 3000
 const path = require('path')
-
-let mongoose = require("mongoose")
-require('dotenv').config();
-
-// --------- Mongo DB config -------------
-
-mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology: true})
-  .then(() => console.log("Mongodb connected"))
-  .catch(err => console.log(err));
+const apiRoutes = require('./routes/api.js');
 
 const requestLogger = (req, res, next) => {
   console.log(`\n${req.method} request made to: ${req.url}\n`);
@@ -29,6 +21,7 @@ app.get('/api', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/api.html'))
 })
 
+apiRoutes(app);
 
 app.use((req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, '404.html'))
