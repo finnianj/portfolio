@@ -5,7 +5,6 @@ const path = require('path')
 const songAPIRoutes = require('./routes/song_api.js');
 const userAPIRoutes = require('./routes/user_api.js');
 const dateAPIRoutes = require('./routes/date_api.js');
-const analyseAPIRoutes = require('./routes/analyse_api.js');
 
 const requestLogger = (req, res, next) => {
   console.log(`\n${req.method} request made to: ${req.url}\n`);
@@ -13,6 +12,7 @@ const requestLogger = (req, res, next) => {
 }
 
 app.use('/', express.static('public'))
+app.use('/api', express.static('public'))
 app.use(requestLogger)
 
 
@@ -27,7 +27,6 @@ app.get('/api', (req, res) => {
 songAPIRoutes(app);
 userAPIRoutes(app);
 dateAPIRoutes(app);
-analyseAPIRoutes(app);
 
 app.use((req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, '404.html'))
