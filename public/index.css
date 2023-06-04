@@ -4,22 +4,16 @@
 @import 'stylesheets/sidebar.css';
 
 @font-face {
-  font-family: myFont;
+  font-family: cherry;
   src: url(fonts/CherryBombOne-Regular.ttf);
 }
 
 body{
-  font-family: MyFont;
+  font-family: cherry;
   margin: 0;
   background-color: rgb(255, 254, 252);
 }
 
-#stretch{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 /* ---------------------------------------------- */
 /* ------------------MEDIA QS-------------------- */
 /* ---------------------------------------------- */

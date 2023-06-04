@@ -11,8 +11,13 @@ const requestLogger = (req, res, next) => {
 app.use('/', express.static('public'))
 app.use(requestLogger)
 
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/index.html'))
+})
+
+app.use((req, res, next) => {
+  res.status(404).sendFile(path.join(__dirname, '404.html'))
 })
 
 app.listen(port, () => {
