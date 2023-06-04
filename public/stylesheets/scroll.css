@@ -12,12 +12,13 @@
 }
 
 #text{
-  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   width: 80%;
+  padding-bottom: 200px;
   overflow: scroll;
-  /* mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%); */
-  /* background: linear-gradient(transparent, gray); */
   mask-image: linear-gradient(to bottom, transparent 0%, black 40%, black 60%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
 }
@@ -38,13 +39,18 @@
   width: 70%;
 }
 
-.portfolio-item > h3{
+h3{
   font-size: 4vw;
+}
+
+.portfolio-item{
+  width: 80%;
 }
 
 .item-container{
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .item-image{
