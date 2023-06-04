@@ -1,0 +1,159 @@
+@import 'stylesheets/background.css';
+@import 'stylesheets/lemon.css';
+@import 'stylesheets/scroll.css';
+@import 'stylesheets/sidebar.css';
+
+@font-face {
+  font-family: myFont;
+  src: url(fonts/CherryBombOne-Regular.ttf);
+}
+
+body{
+  font-family: MyFont;
+  margin: 0;
+  background-color: rgb(255, 254, 252);
+}
+
+#stretch{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ---------------------------------------------- */
+/* ------------------MEDIA QS-------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+@media (min-width:0px)  {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  #box1{
+    width: 70px;
+    height: 70px;
+  }
+  #box2{
+    width: 35px;
+    height: 35px;
+  }
+  #box3{
+    width: 50px;
+    height: 50px;
+  }
+  #box4{
+    width: 100px;
+    height: 100px;
+  }
+  /* #text > h2 {
+    font-size: 40px;
+  } */
+}
+@media (min-width:480px)  {
+  /* smartphones, Android phones, landscape iPhone */
+  #box1{
+    width: 90px;
+    height: 90px;
+  }
+  #box2{
+    width: 55px;
+    height: 55px;
+  }
+  #box3{
+    width: 70px;
+    height: 70px;
+  }
+  #box4{
+    width: 120px;
+    height: 120px;
+  }
+  /* #text > h2 {
+    font-size: 50px;
+  } */
+}
+@media (min-width:600px)  {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  #box1{
+    width: 110px;
+    height: 110px;
+  }
+  #box2{
+    width: 75px;
+    height: 75px;
+  }
+  #box3{
+    width: 90px;
+    height: 90px;
+  }
+  #box4{
+    width: 140px;
+    height: 140px;
+  }
+  /* #text > h2 {
+    font-size: 60px;
+  } */
+}
+@media (min-width:801px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  #box1{
+    width: 130px;
+    height: 130px;
+  }
+  #box2{
+    width: 95px;
+    height: 95px;
+  }
+  #box3{
+    width: 110px;
+    height: 110px;
+  }
+  #box4{
+    width: 160px;
+    height: 160px;
+  }
+  /* #text > h2 {
+    font-size: 70px;
+  } */
+}
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  #box1{
+    width: 150px;
+    height: 150px;
+  }
+  #box2{
+    width: 115px;
+    height: 115px;
+  }
+  #box3{
+    width: 130px;
+    height: 130px;
+  }
+  #box4{
+    width: 180px;
+    height: 180px;
+  }
+  /* #text > h2 {
+    font-size: 80px;
+  } */
+}
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  #box1{
+    width: 200px;
+    height: 200px;
+  }
+  #box2{
+    width: 100px;
+    height: 100px;
+  }
+  #box3{
+    width: 150px;
+    height: 150px;
+  }
+  #box4{
+    width: 300px;
+    height: 300px;
+  }
+  /* #text > h2 {
+    font-size: 100px;
+  } */
+}
