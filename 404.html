@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Document</title>
+  <style>
+    @font-face {
+      font-family: cherry;
+      src: url(fonts/CherryBombOne-Regular.ttf);
+    }
+    body{
+      height: 100vh;
+      font-family: cherry;
+      font-size: 2vw;
+      background-color: rgb(255, 254, 252);
+
+    }
+    #container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    #blob{
+      width: 40vw;
+      height: 40vw;
+      background-color: rgba(0, 238, 255, 0.9);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: pulse-blue 9s infinite;
+    }
+    #home-button{
+      text-decoration: none;
+      opacity: 100%;
+      transition: opacity 0.3s;
+    }
+    #home-button:hover{
+      opacity: 80%;
+      transition: 0.3s;
+    }
+    @keyframes pulse-blue {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 238, 255, 0.9); ;
+      }
+
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 7vw rgba(0, 0, 0, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="blob">
+      <div>
+        <h1>404</h1>
+        <p>Page not found</p>
+        <a href="/" id="home-button"><h3>Home</h3></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
