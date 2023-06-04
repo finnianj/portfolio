@@ -11,7 +11,7 @@ app.use('/', express.static('public'))
 app.use(requestLogger)
 
 app.get('/', (req, res) => {
-  res.send('Goodbye World')
+  res.render('views/index.html')
 })
 
 app.listen(port, () => {
