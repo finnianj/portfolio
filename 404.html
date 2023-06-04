@@ -14,6 +14,8 @@
       height: 100vh;
       font-family: cherry;
       font-size: 2vw;
+      background-color: rgb(255, 254, 252);
+
     }
     #container{
       display: flex;
@@ -34,6 +36,12 @@
     }
     #home-button{
       text-decoration: none;
+      opacity: 100%;
+      transition: opacity 0.3s;
+    }
+    #home-button:hover{
+      opacity: 80%;
+      transition: 0.3s;
     }
     @keyframes pulse-blue {
       0% {
@@ -59,7 +67,7 @@
       <div>
         <h1>404</h1>
         <p>Page not found</p>
-        <a href="" id="home-button"><h3>Home</h3></a>
+        <a href="/" id="home-button"><h3>Home</h3></a>
       </div>
     </div>
   </div>
