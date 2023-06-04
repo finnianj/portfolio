@@ -6,6 +6,12 @@ const path = require('path')
 let mongoose = require("mongoose")
 require('dotenv').config();
 
+// --------- Mongo DB config -------------
+
+mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology: true})
+  .then(() => console.log("Mongodb connected"))
+  .catch(err => console.log(err));
+
 const requestLogger = (req, res, next) => {
   console.log(`\n${req.method} request made to: ${req.url}\n`);
   next()
