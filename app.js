@@ -3,6 +3,9 @@ const app = express()
 const port = 3000
 const path = require('path')
 
+let mongoose = require("mongoose")
+require('dotenv').config();
+
 const requestLogger = (req, res, next) => {
   console.log(`\n${req.method} request made to: ${req.url}\n`);
   next()
@@ -10,6 +13,7 @@ const requestLogger = (req, res, next) => {
 
 app.use('/', express.static('public'))
 app.use(requestLogger)
+
 
 
 app.get('/', (req, res) => {
