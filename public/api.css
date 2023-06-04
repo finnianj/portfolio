@@ -1,0 +1,18 @@
+@import 'index.css';
+
+/* #text > * {
+  color: white !important;
+}
+
+body{
+  background-color: black !important;
+} */
+
+p, ul, li{
+  font-size: 2vw;
+}
+
+#ip-button{
+  height: 50px;
+}
+

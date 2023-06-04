@@ -6,3 +6,10 @@ sidebarButton.addEventListener('click', () => {
   console.log('clicked');
   sidebar.classList.toggle('show')
 })
+
+
+const ipButton = document.getElementById('ip-button')
+
+ipButton.addEventListener('click', () => {
+  
+})
