@@ -8,15 +8,15 @@ const convertDate = (date) => {
 
   if (regexone.test(date)) {
     unix = Date.parse(date);
-    utc = new Date(date).toGMTString();
+    utc = new Date(date).toLocaleString();
   } else if (regextwo.test(date)) {
     console.log("test 2 passed")
     unix = parseInt(date, 10);
     console.log(typeof date)
-    utc = new Date(parseInt(date, 10)).toGMTString();
+    utc = new Date(parseInt(date, 10)).toLocaleString();
     console.log("utc " + utc)
   } else if (typeof new Date(date) == "object" ) {
-    utc = new Date(date).toGMTString()
+    utc = new Date(date).toLocaleString()
     unix = Date.parse(date)
     console.log("object")
   } else {
