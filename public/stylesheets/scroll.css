@@ -41,7 +41,7 @@ h2{
 }
 
 h3{
-  font-size: 5vw;
+  font-size: 6vw;
 }
 p {
   font-size: 5vw;
@@ -50,6 +50,7 @@ p {
 
 .portfolio-item{
   width: 80%;
+  margin-top: 30vh;
 }
 
 .item-container{
