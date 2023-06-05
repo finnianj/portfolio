@@ -20,7 +20,6 @@
   background-color: rgba(0, 238, 255, 0.9);
   border-bottom-left-radius: 100%;
   animation: pulse-blue 4s infinite;
-
 }
 #box3{
   z-index: 10;
@@ -33,7 +32,6 @@
   border-top-right-radius: 100%;
   align-self: end;
   animation: pulse-green 5s infinite;
-
 }
 #box4{
   z-index: 10;
@@ -45,6 +43,52 @@
   background-color: rgb(255, 191, 0);
   border-top-left-radius: 100%;
   animation: pulse-yellow 7s infinite;
+}
+#box5{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 191, 0);
+  border-bottom-right-radius: 100%;
+  animation: pulse-yellow 7s infinite;
+}
+#box6{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 255, 179, 0.8);
+  border-bottom-left-radius: 100%;
+  align-self: end;
+  animation: pulse-green 5s infinite;
+}
+#box7{
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 238, 255, 0.9);
+  border-top-right-radius: 100%;
+  align-self: end;
+  animation: pulse-blue 5s infinite;
+}
+#box8{
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 0, 144);
+  border-top-left-radius: 100%;
+  animation: pulse-pink 6s infinite;
 }
 
 /* ---------------------------------------------- */
