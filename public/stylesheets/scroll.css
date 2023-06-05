@@ -47,6 +47,9 @@ p {
   font-size: 5vw;
   /* list-style-type: none; */
 }
+label{
+  font-size: 1vw;
+}
 
 .portfolio-item{
   width: 80%;

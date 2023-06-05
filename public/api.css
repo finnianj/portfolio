@@ -13,3 +13,23 @@ body{
 #ip-button{
   height: 50px;
 }
+
+#date-input{
+  margin-top: 5vw;
+  height: 3vw;
+  width: auto;
+  font-size: 3vw;
+  padding: 1vw;
+  border: 3px solid rgb(94, 29, 155);
+  border-radius: 10px;
+}
+
+#date-submit{
+  margin-top: 2vw;
+  font-size: 3vw;
+  height: 5vw;
+  width: auto;
+  border-radius: 10px;
+  background-color: gold;
+  font-family: 'cherry';
+}
