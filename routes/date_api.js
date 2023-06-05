@@ -1,5 +1,6 @@
 const convertDate = (date) => {
-  const regexone = /^\d{4}.\d{2}.\d{2}$/
+  console.log(date);
+  const regexone = /^\d{4}[\/\.]\d{2}[\/\.]\d{2}$/
   const regextwo = /^\d+$/
   let utc = "";
   let unix= "";
@@ -34,12 +35,10 @@ module.exports = function(app) {
   })
 
   app.get("/api/date/:date", function(req, res) {
-    console.log(req.params);
     let conversion = convertDate(req.params.date)
     if (conversion[0] == "I" || conversion[0] == "Invalid Date") {
       res.json({ "error": "Invalid date"} )
     }
-    console.log(conversion);
     res.json({ "unix": conversion[1], "utc": conversion[0] })
   })
 }

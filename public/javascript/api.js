@@ -4,8 +4,8 @@ const dateSubmit = document.getElementById("date-submit");
 
 dateSubmit.addEventListener('click', (e) => {
   e.preventDefault()
-  console.log(dateInput.value);
-  window.open(`/api/date/${dateInput.value}`, '_blank');
+  let d = dateInput.value.replaceAll('/', '%2F')
+  window.open(`/api/date/${d}`, '_blank');
   dateInput.value = ""
 })
 
