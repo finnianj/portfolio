@@ -35,6 +35,12 @@ body{
   background-color: gold;
   font-family: 'cherry';
   border: 5px solid black;
+  opacity: 100%;
+  transition: 0.3s;
 }
 
-
+#date-submit:hover{
+  opacity: 80%;
+  transition: 0.3s;
+  cursor: pointer;
+}
