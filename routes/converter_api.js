@@ -4,9 +4,9 @@ module.exports = function (app) {
 
   let convertHandler = new ConvertHandler();
 
-  app.get('/api/convert', (req, res) => {
-
-    let input = convertHandler.getNum(req.query.input)
+  app.get('/api/converter/:value', (req, res) => {
+    console.log(req.query);
+    let input = convertHandler.getNum(req.query.value)
 
     if (input == "invalid unit") {
       console.log("invalid unit")
