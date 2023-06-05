@@ -24,11 +24,11 @@ module.exports = function (app) {
 
       let string = convertHandler.getString(input[0], input[1], rounded, converted[1])
       let json_result = {
-        initNum: input[0],
-        initUnit: input[1],
-        returnNum: rounded,
+        Number: input[0],
+        Unit: input[1],
+        returnNumber: rounded,
         returnUnit: converted[1],
-        string: string
+        Response: string
       }
       res.json(json_result)
     }
