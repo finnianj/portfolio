@@ -5,13 +5,11 @@ module.exports = function (app) {
   let convertHandler = new ConvertHandler();
 
   app.get('/api/converter', (req, res) => {
-    console.log(req.query);
-    res.json(req.query)
     let input = convertHandler.getNum(req.query.value)
 
     if (input == "invalid unit") {
       console.log("invalid unit")
-      res.json("invalid unit")
+      res.json("invalid unit. You must use mi, km, lbs, kg, l or gal")
     } else if (input == 'invalid number') {
       console.log("invalid number")
       res.json("invalid number")
