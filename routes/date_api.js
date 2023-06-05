@@ -1,9 +1,9 @@
 const convertDate = (date) => {
-  console.log(date);
+  console.log("\nConverting: " + date);
   const regexone = /^\d{4}[\/\.]\d{2}[\/\.]\d{2}$/
   const regextwo = /^\d+$/
-  let utc = "";
-  let unix= "";
+  let utc = ""
+  let unix = ""
   // clearing variables from previous search
 
   if (regexone.test(date)) {
