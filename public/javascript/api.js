@@ -14,7 +14,7 @@ dateSubmit.addEventListener('click', (e) => {
 converterSubmit.addEventListener('click', (e) => {
   e.preventDefault()
   console.log(converterInput.value);
-  window.open(`/api/converter/?=${converterInput.value}`, '_blank');
+  window.open(`/api/converter?value=${converterInput.value}`, '_blank');
   converterInput.value = ""
 })
 

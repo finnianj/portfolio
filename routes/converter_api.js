@@ -1,11 +1,12 @@
-const ConvertHandler = require('../controllers/convertHandler.js');
+const ConvertHandler = require('../controllers/convert_handler.js');
 
 module.exports = function (app) {
 
   let convertHandler = new ConvertHandler();
 
-  app.get('/api/converter/:value', (req, res) => {
+  app.get('/api/converter', (req, res) => {
     console.log(req.query);
+    res.json(req.query)
     let input = convertHandler.getNum(req.query.value)
 
     if (input == "invalid unit") {
