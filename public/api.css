@@ -8,14 +8,39 @@ body{
   background-color: black !important;
 } */
 
-p, ul, li{
-  font-size: 2vw;
-}
 
-h4{
-  font-size: 3vw;
-}
 
 #ip-button{
   height: 50px;
+}
+
+#date-input{
+  font-family: 'cherry';
+  margin-top: 5vw;
+  height: 3vw;
+  width: auto;
+  font-size: 3vw;
+  padding: 1vw;
+  border: 5px solid rgb(94, 29, 155);
+  border-radius: 10px;
+}
+
+#date-submit{
+  margin-top: 2vw;
+  font-size: 3vw;
+  width: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 10px;
+  background-color: gold;
+  font-family: 'cherry';
+  border: 5px solid black;
+  opacity: 100%;
+  transition: 0.3s;
+}
+
+#date-submit:hover{
+  opacity: 80%;
+  transition: 0.3s;
+  cursor: pointer;
 }

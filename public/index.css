@@ -5,13 +5,13 @@
 
 @font-face {
   font-family: cherry;
-  src: url(fonts/CherryBombOne-Regular.ttf);
+  src: url('/fonts/CherryBombOne-Regular.ttf');
 }
 
 body{
   font-family: cherry;
   margin: 0;
-  background-color: rgb(255, 254, 252);
+  background-color: rgb(255, 236, 213);
 }
 
 /* ---------------------------------------------- */
