@@ -41,17 +41,17 @@
           <p>Since it can be represented as a single number, it is often used in programming.</p>
           <p>You can get the time for today now:</p>
           <p>
-            <a href="/api/whoami" target="_blank" class="link" style="text-decoration: none;">
+            <a href="/api/date" target="_blank" class="link" style="text-decoration: none;">
               What time is it now?
               <i class="fa-solid fa-house-signal"></i>
             </a>
           </p>
           <p>Or you can convert using the input below.</p>
-          <form action="/">
-            <label for="fname">It accepts both values in seconds (Unix time), and date values (DD/MM/YYYY)</label>
+          <form>
+            <label for="date">It accepts both values in seconds (Unix time), and date values (YYYY/MM/DD)</label>
             <br>
-            <input type="text" id="fname" name="fname" placeholder="eg 06/06/1996"><br>
-            <input type="submit" value="Submit">
+            <input type="text" id="date-input" name="date" placeholder="eg 1996/06/06"><br>
+            <input type="submit" id="date-submit" value="Submit">
           </form>
         </div>
 
@@ -59,6 +59,6 @@
     </div>
   </div>
 
-
+  <script src="api.js"></script>
 </body>
 </html>

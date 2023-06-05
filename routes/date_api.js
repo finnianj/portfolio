@@ -35,6 +35,7 @@ module.exports = function(app) {
   })
 
   app.get("/api/date/:date", function(req, res, next) {
+    console.log(req.params);
     let conversion = convertDate(req.params.date)
     if (conversion[0] == "I" || conversion[0] == "Invalid Date") {
       return res.json({ "error": "Invalid date"} )
