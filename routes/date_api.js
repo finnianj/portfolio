@@ -10,26 +10,20 @@ const convertDate = (date) => {
     unix = Date.parse(date);
     utc = new Date(date).toLocaleString();
   } else if (regextwo.test(date)) {
-    console.log("test 2 passed")
     unix = parseInt(date, 10);
-    console.log(typeof date)
     utc = new Date(parseInt(date, 10)).toLocaleString();
-    console.log("utc " + utc)
   } else if (typeof new Date(date) == "object" ) {
     utc = new Date(date).toLocaleString()
     unix = Date.parse(date)
-    console.log("object")
   } else {
-    return "Invalid"
+    return "Invalid date given"
   }
-  console.log("final returning " + utc + " and " + unix)
   return [utc, unix];
 
 }
 
 module.exports = function(app) {
   app.get("/api/date", function(req, res, next) {
-    // calling api path returns current date and time
     return res.json({ "unix": Date.now(), "utc": new Date(Date.now()).toGMTString() })
     next();
   })
