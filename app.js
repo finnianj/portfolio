@@ -7,6 +7,12 @@ const userAPIRoutes = require('./routes/user_api.js');
 const dateAPIRoutes = require('./routes/date_api.js');
 const converterAPIRoutes = require('./routes/converter_api.js')
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+// in latest body-parser use like below.
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const requestLogger = (req, res, next) => {
   console.log(`\n${req.method} request made to: ${req.url}\n`);
   next()
