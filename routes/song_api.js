@@ -23,7 +23,28 @@ const songSchema = new mongoose.Schema({
   comments: [String]
 });
 
-let Song = mongoose.model('Book', bookSchema);
+let Song = mongoose.model('Song', songSchema);
 
 
-module.exports = function (app) {}
+module.exports = function (app) {
+
+  app.post('/api/song', function(req, res) {
+    console.log(req.body);
+
+    // let new_song = new Song({
+    //     username: req.body.username,
+    //   });
+
+    // new_user.save()
+    //   .then((data) => {
+    //       console.log("Created user: " + data)
+    //       res.json({ username: data.username, _id: data._id });
+    //   })
+    //   .catch((err) => {
+    //     console.log("Error: " + err)
+    //   });
+
+
+  });
+
+}

@@ -32,14 +32,17 @@
         <p class="api-link">Metric to Imperial Converter</p>
         <p class="api-link">UNIX Date Converter</p>
       <h3>Enjoy!</h3>
-      
+
       <div class="portfolio-item">
         <h3>Favourite Song Database</h3>
         <p>Let's make a playlist! You can post your favourite song here.</p>
         <p>You can also check out what other people have submitted</p>
-        <label for="date">Simply type in a number followed by a unit.</label><br>
-        <label for="date">Valid units are mi, km, lbs, kg, l or gal.</label>
         <br>
+        <form action="/api/song" method="post">
+          <h3>Submit a song</h3>
+          <input id="name" type="text" name="username" placeholder="username" />
+          <input type="submit" value="Submit" />
+        </form>
         <input type="text" id="converter-input" class="api-input" name="date" placeholder="eg. 45lbs"><br>
         <input type="submit" id="converter-submit" class="api-submit" value="Submit">
       </div>
