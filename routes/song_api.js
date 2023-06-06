@@ -20,7 +20,7 @@ const songSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  date_submitted: {type: String, default: new Date().toLocaleString()},
+  date_submitted: String,
   comment: {
     type: String,
     required: true
@@ -46,7 +46,8 @@ module.exports = function (app) {
         title: req.body.title,
         artist: req.body.artist,
         submitted_by: req.body.submitted_by,
-        comment: req.body.comment
+        comment: req.body.comment,
+        date_submitted: data.date_submitted.toLocaleString()
       });
 
     new_song.save()
@@ -57,7 +58,7 @@ module.exports = function (app) {
             artist: data.artist,
             submitted_by: data.submitted_by,
             comment: data.comment,
-            date_submitted: data.date_submitted.toLocaleString(),
+            date_submitted: data.date_submitted,
             _id: data._id
           });
       })
