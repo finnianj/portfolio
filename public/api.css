@@ -1,6 +1,11 @@
 @import 'index.css';
 
 
+
+.api-text{
+  color: #209db0 !important;
+}
+
 .api-link{
   color: #209db0;
   cursor: pointer;
