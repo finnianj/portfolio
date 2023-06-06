@@ -40,8 +40,14 @@
         <br>
         <form action="/api/song" method="post">
           <h3>Submit a song</h3>
-          <input id="name" type="text" name="username" placeholder="username" />
+
+          <input id="api-title" class="api-input" type="text" name="title" placeholder="title" />
+          <input id="api-artist" class="api-input" type="text" name="artist" placeholder="artist" />
+          <input id="api-username" class="api-input" type="text" name="username" placeholder="username" />
+          <input id="api-comment" class="api-input" type="text" name="comment" placeholder="comment" />
+
           <input type="submit" value="Submit" />
+
         </form>
         <input type="text" id="converter-input" class="api-input" name="date" placeholder="eg. 45lbs"><br>
         <input type="submit" id="converter-submit" class="api-submit" value="Submit">
