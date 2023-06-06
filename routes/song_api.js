@@ -20,7 +20,7 @@ const songSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  date_submitted: {type: Date, default: new Date()},
+  date_submitted: {type: String, default: new Date().toLocaleString()},
   comment: {
     type: String,
     required: true
@@ -29,12 +29,12 @@ const songSchema = new mongoose.Schema({
 
 let Song = mongoose.model('Song', songSchema);
 
-// Song.deleteMany({}).then((res) => {
-//     //if succeded do this block of code
-//     console.log(res)
-//   }).catch((err) => {
-//     console.log("Error: " + err)
-// });
+Song.deleteMany({}).then((res) => {
+    //if succeded do this block of code
+    console.log(res)
+  }).catch((err) => {
+    console.log("Error: " + err)
+});
 
 
 module.exports = function (app) {
