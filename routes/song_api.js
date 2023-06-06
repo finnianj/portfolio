@@ -29,7 +29,7 @@ let Song = mongoose.model('Song', songSchema);
 module.exports = function (app) {
 
   app.post('/api/song', function(req, res) {
-    console.log(req.params);
+    console.log(req.body);
     res.json("yo")
     // let new_song = new Song({
     //     username: req.body.username,
