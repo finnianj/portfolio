@@ -47,7 +47,7 @@ module.exports = function (app) {
         artist: req.body.artist,
         submitted_by: req.body.submitted_by,
         comment: req.body.comment,
-        date_submitted: data.date_submitted.toLocaleString()
+        date_submitted: new Date().toLocaleString()
       });
 
     new_song.save()
