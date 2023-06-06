@@ -7,15 +7,23 @@ mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology:
   .then(() => console.log("Mongodb connected"))
   .catch(err => console.log(err));
 
-// const bookSchema = new mongoose.Schema({
-//   title: {
-//     type: String,
-//     required: true
-//   },
-//   comments: [String]
-// });
+const songSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true
+  },
+  artist: {
+    type: String,
+    required: true
+  },
+  username: {
+    type: String,
+    required: true
+  },
+  comments: [String]
+});
 
-// let Book = mongoose.model('Book', bookSchema);
+let Song = mongoose.model('Book', bookSchema);
 
 
 module.exports = function (app) {}
