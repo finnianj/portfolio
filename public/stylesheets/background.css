@@ -55,7 +55,7 @@
   border-bottom-right-radius: 100%;
   animation: pulse-yellow 7s infinite;
 }
-#box6{
+/* #box6{
   z-index: 10;
   position: fixed;
   top: 0;
@@ -66,8 +66,8 @@
   border-bottom-left-radius: 100%;
   align-self: end;
   animation: pulse-green 5s infinite;
-}
-#box7{
+} */
+/* #box7{
   z-index: 10;
   position: fixed;
   bottom: 0;
@@ -78,7 +78,7 @@
   border-top-right-radius: 100%;
   align-self: end;
   animation: pulse-blue 5s infinite;
-}
+} */
 #box8{
   z-index: 10;
   position: fixed;
