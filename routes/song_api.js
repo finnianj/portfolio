@@ -16,7 +16,7 @@ const songSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  username: {
+  submitted_by: {
     type: String,
     required: true
   },
@@ -29,6 +29,13 @@ const songSchema = new mongoose.Schema({
 
 let Song = mongoose.model('Song', songSchema);
 
+Song.deleteMany({}).then((res) => {
+    //if succeded do this block of code
+    console.log(res)
+  }).catch((err) => {
+    console.log("Error: " + err)
+});
+
 
 module.exports = function (app) {
 
@@ -37,7 +44,7 @@ module.exports = function (app) {
     let new_song = new Song({
         title: req.body.title,
         artist: req.body.artist,
-        username: req.body.username,
+        submitted_by: req.body.submitted_by,
         comment: req.body.comment
       });
 
@@ -47,7 +54,7 @@ module.exports = function (app) {
           res.json({
             title: data.title,
             artist: data.artist,
-            submitted_by: data.username,
+            submitted_by: data.submitted_by,
             comment: data.comment,
             date_submitted: data.date_submitted.toLocaleString(),
             _id: data._id
@@ -57,7 +64,17 @@ module.exports = function (app) {
         console.log("Error: " + err)
       });
 
-
   });
+
+  app.get('/api/song', function(req, res) {
+    Song.find({})
+    .then(data => {
+      res.json(data)
+    })
+    .catch(err => {
+      console.log(err)
+      res.json(err)
+    })
+  })
 
 }
