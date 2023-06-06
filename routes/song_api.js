@@ -29,12 +29,12 @@ const songSchema = new mongoose.Schema({
 
 let Song = mongoose.model('Song', songSchema);
 
-Song.deleteMany({}).then((res) => {
-    //if succeded do this block of code
-    console.log(res)
-  }).catch((err) => {
-    console.log("Error: " + err)
-});
+// Song.deleteMany({}).then((res) => {
+//     //if succeded do this block of code
+//     console.log(res)
+//   }).catch((err) => {
+//     console.log("Error: " + err)
+// });
 
 
 module.exports = function (app) {
