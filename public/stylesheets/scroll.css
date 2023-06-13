@@ -149,6 +149,8 @@ label{
 }
 
 .info-popup{
+  opacity: 0%;
+  transition: 0.3s;
   position: fixed;
   top: 36vh;
   right: 25vw;
@@ -163,8 +165,6 @@ label{
   color: black;
   cursor: default;
   font-weight: 100;
-  opacity: 0%;
-  transition: 0.3s;
 }
 
 .overlay-hidden{
