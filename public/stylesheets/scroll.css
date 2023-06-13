@@ -128,7 +128,6 @@ label{
 }
 
 .fa-circle-info{
-  z-index: 1001;
   font-size: 4vw;
   align-self: flex-start;
   color: rgb(94, 29, 155);
@@ -143,7 +142,6 @@ label{
 }
 
 .info-popup{
-  z-index: 1001;
   position: absolute;
   top: 8vw;
   right: 9vw;
@@ -162,13 +160,13 @@ label{
 }
 
 .overlay-show{
-  z-index: 1000;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: black;
   backdrop-filter: blur(8px); /* Apply blur effect */
-  opacity: 50%;
 }
 
 .visible{
