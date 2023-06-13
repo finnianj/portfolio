@@ -146,13 +146,14 @@ label{
 }
 
 .info-popup{
-  position: absolute;
-  top: 8vw;
-  right: 9vw;
+  position: fixed;
+  top: 36vh;
+  right: 25vw;
   width: 40vw;
   height: fit-content;
   border: 4px solid rgb(255, 0, 144);
   border-radius: 10px;
+  /* background-color: rgba(128, 128, 128, 0.541); */
   /* background-color: rgb(255, 191, 0); */
   padding: 1vw;
   font-family: 'cherry';
@@ -170,9 +171,11 @@ label{
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  opacity: 50%;
+  background-color: rgb(247, 247, 247);
   backdrop-filter: blur(8px); /* Apply blur effect */
+  cursor: pointer;
+  opacity: 0%;
+  transition: 1s;
 }
 
 .visible{

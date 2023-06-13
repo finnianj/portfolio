@@ -10,7 +10,15 @@ sidebarButton.addEventListener('click', () => {
 
 Array.from(infoButtons).forEach(b => {
   b.children[0].addEventListener('click', (e) => {
-    overlay.classList.toggle('overlay-show')
+    overlay.classList.toggle('visible')
     b.children[1].classList.toggle('visible');
   })
 });
+
+overlay.addEventListener('click', () => {
+  console.log('clicked');
+  overlay.classList.remove('overlay-show')
+  Array.from(infoButtons).forEach(b => {
+    b.children[1].classList.toggle('visible');
+  });
+})
