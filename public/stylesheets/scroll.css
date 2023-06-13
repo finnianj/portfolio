@@ -145,9 +145,13 @@ label{
   padding: 1vw;
   font-family: 'cherry';
   color: black;
+  cursor: default;
   font-weight: 100;
+  opacity: 100%;
+  transition: 0.5s;
 }
 
-.d-none{
-  display: none;
+.invisible{
+  opacity: 0%;
+  transition: 0.3s;
 }

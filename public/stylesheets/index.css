@@ -1,7 +1,7 @@
-@import 'stylesheets/background.css';
-@import 'stylesheets/lemon.css';
-@import 'stylesheets/scroll.css';
-@import 'stylesheets/sidebar.css';
+@import 'background.css';
+@import 'lemon.css';
+@import 'scroll.css';
+@import 'sidebar.css';
 
 @font-face {
   font-family: cherry;
