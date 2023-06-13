@@ -40,8 +40,9 @@ h2{
   margin-top: 30vh !important;
 }
 
-h3{
+.portfolio-item > h3{
   font-size: 6vw;
+  margin-bottom: 3vw;
 }
 p {
   font-size: 5vw;
@@ -122,4 +123,10 @@ label{
   align-self: flex-start;
   color: rgb(94, 29, 155);
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.fa-circle-info:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
 }
