@@ -133,8 +133,8 @@ label{
 
 .info-popup{
   position: absolute;
-  top: 16vw;
-  right: -18vw;
+  top: 0;
+  right: -30vw;
   width: fit-content;
   max-width: 25vw;
   font-size: 2vw;
@@ -143,4 +143,7 @@ label{
   border-radius: 10px;
   background-color: rgb(255, 191, 0);
   padding: 1vw;
+  font-family: 'cherry';
+  color: black;
+  font-weight: 100;
 }
