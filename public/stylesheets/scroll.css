@@ -117,3 +117,9 @@ label{
   opacity: 70%;
   transition: 0.3s;
 }
+
+.fa-circle-info{
+  align-self: flex-start;
+  color: rgb(94, 29, 155);
+  cursor: pointer;
+}
