@@ -1,3 +1,4 @@
+import 'animate.css';
 const sidebarButton = document.getElementById('sidebar-button')
 const sidebar = document.getElementById('sidebar')
 // const sidebarText = document.getElementById('sidebar-text')
