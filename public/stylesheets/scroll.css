@@ -147,3 +147,7 @@ label{
   color: black;
   font-weight: 100;
 }
+
+.d-none{
+  display: none;
+}
