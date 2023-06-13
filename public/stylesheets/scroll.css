@@ -1,5 +1,4 @@
 #container{
-  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,6 +43,10 @@ h2{
   font-size: 6vw;
   margin-bottom: 3vw;
 }
+.portfolio-item > * {
+  z-index: 99;
+}
+
 p {
   font-size: 5vw;
   /* list-style-type: none; */
@@ -122,6 +125,7 @@ label{
 }
 
 .info-wrapper{
+  z-index: 103;
   position: absolute;
   top: 9vw;
   right: -5vw;
@@ -160,17 +164,19 @@ label{
 }
 
 .overlay-show{
-  position: absolute;
+  z-index: 100;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: black;
+  opacity: 50%;
   backdrop-filter: blur(8px); /* Apply blur effect */
 }
 
 .visible{
-  opacity: 100% !important;
+  opacity: 100%;
   transition: 0.5s;
 }
 .fade{
