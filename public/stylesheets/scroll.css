@@ -164,7 +164,7 @@ label{
   transition: 0.3s;
 }
 
-.overlay-show{
+.overlay-hidden{
   z-index: 100;
   position: fixed;
   top: 0;
@@ -176,9 +176,11 @@ label{
   cursor: pointer;
   opacity: 0%;
   transition: 1s;
+  display: none;
 }
 
 .visible{
+  display: block !important;
   opacity: 100%;
   transition: 0.5s;
 }
