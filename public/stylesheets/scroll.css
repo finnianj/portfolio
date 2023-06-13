@@ -1,5 +1,4 @@
 #container{
-  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -12,14 +11,18 @@
 }
 
 .text{
+  color: rgb(43, 43, 43);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   height: 100%;
-  width: 70%;
+  width: 100%;
   padding-bottom: 200px;
   overflow: scroll;
+}
+
+.text-fade{
   mask-image: linear-gradient(to bottom, transparent 0%, black 40%, black 60%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
 }
@@ -33,16 +36,20 @@ h2{
   text-align: center;
   font-size: 8vw;
   font-weight: lighter;
-  color: rgb(43, 43, 43);
   width: 70%;
 }
 .title{
   margin-top: 30vh !important;
 }
 
-h3{
+.portfolio-item > h3{
   font-size: 6vw;
+  margin-bottom: 3vw;
 }
+.portfolio-item > * {
+  z-index: 99;
+}
+
 p {
   font-size: 5vw;
   /* list-style-type: none; */
@@ -52,21 +59,24 @@ label{
 }
 
 .portfolio-item{
-  width: 80%;
+  width: 50%;
   margin-top: 30vh;
+  position: relative;
 }
 
 .item-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .item-image{
   transform: scale(1);
   transition: transform 0.8s;
-  height: 20vw;
-  width: 20vw !important;
+  height: 40vw;
+  width: 40vw !important;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 50%;
   object-fit: cover;
   border: 8px solid #edebec;
@@ -115,4 +125,76 @@ label{
 .link:hover{
   opacity: 70%;
   transition: 0.3s;
+}
+
+.info-wrapper{
+  z-index: 103;
+  position: absolute;
+  top: 9vw;
+  right: -5vw;
+}
+
+.fa-circle-info{
+  font-size: 4vw;
+  align-self: flex-start;
+  color: rgb(94, 29, 155);
+  cursor: help;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.fa-circle-info:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.info-popup{
+  position: fixed;
+  top: 36vh;
+  right: 25vw;
+  width: 40vw;
+  height: fit-content;
+  border: 1vw solid rgb(255, 0, 144);
+  border-radius: 10px;
+  /* background-color: rgba(128, 128, 128, 0.541); */
+  background-color: rgb(255, 191, 0);
+  padding: 1vw;
+  font-family: 'cherry';
+  color: black;
+  cursor: default;
+  font-weight: 100;
+  opacity: 0%;
+  transition: 0.3s;
+}
+
+.overlay-hidden{
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(253 253 253 / 40%);
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  cursor: pointer;
+  opacity: 0%;
+  transition: 1s;
+  display: none;
+}
+
+.visible{
+  display: block !important;
+  opacity: 100%;
+  transition: 0.5s;
+}
+.fade{
+  opacity: 40%;
+  transition: 0.3s;
+}
+
+.info-text {
+  font-size: 2vw;
+}
+.software-list {
+  font-size: 1vw;
 }
