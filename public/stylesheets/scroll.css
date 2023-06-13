@@ -18,7 +18,7 @@
   align-items: center;
   text-align: center;
   height: 100%;
-  width: 70%;
+  width: 100%;
   padding-bottom: 200px;
   overflow: scroll;
   mask-image: linear-gradient(to bottom, transparent 0%, black 40%, black 60%, transparent 100%);
@@ -53,7 +53,7 @@ label{
 }
 
 .portfolio-item{
-  width: 80%;
+  width: 50%;
   margin-top: 30vh;
   position: relative;
 }
@@ -133,13 +133,14 @@ label{
 
 .info-popup{
   position: absolute;
-  top: 20vw;
-  right: -5vw;
+  top: 16vw;
+  right: -18vw;
   width: fit-content;
-  max-width: 15vw;
+  max-width: 25vw;
   font-size: 2vw;
   height: fit-content;
   border: 2px solid black;
+  border-radius: 10px;
   background-color: rgb(255, 191, 0);
   padding: 1vw;
 }
