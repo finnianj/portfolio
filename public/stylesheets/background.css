@@ -16,7 +16,7 @@
   right: 0;
   width: 100px;
   height: 100px;
-  background-color: #00D1FF;
+  background-color: #33daff;
   border-bottom-left-radius: 100%;
   /* animation: pulse-blue 4s infinite; */
 }
@@ -27,7 +27,7 @@
   left: 0;
   width: 150px;
   height: 150px;
-  background-color: #00CF99;
+  background-color: #2affa3;
   border-top-right-radius: 100%;
   align-self: end;
   /* animation: pulse-green 5s infinite; */
