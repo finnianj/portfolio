@@ -16,7 +16,7 @@
   right: 0;
   width: 100px;
   height: 100px;
-  background-color: #33daff;
+  background-color: #00d1ffd1;
   border-bottom-left-radius: 100%;
   /* animation: pulse-blue 4s infinite; */
 }
@@ -27,7 +27,7 @@
   left: 0;
   width: 150px;
   height: 150px;
-  background-color: #2affa3;
+  background-color: #00ce75d1;
   border-top-right-radius: 100%;
   align-self: end;
   /* animation: pulse-green 5s infinite; */
@@ -61,7 +61,7 @@
   right: 0;
   width: 50px;
   height: 50px;
-  background-color: #00CF99;
+  background-color: #00ce75d1;
   border-bottom-left-radius: 100%;
   align-self: end;
   /* animation: pulse-green 5s infinite; */
@@ -73,7 +73,7 @@
   left: 0;
   width: 50px;
   height: 50px;
-  background-color: #00D1FF;
+  background-color: #00d1ffd1;
   border-top-right-radius: 100%;
   align-self: end;
   /* animation: pulse-blue 5s infinite; */
@@ -114,7 +114,7 @@
 @keyframes pulse-green {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 255, 179, 0.7);
+    box-shadow: 0 0 0 0 #00ce75d1;
   }
 
   50% {
@@ -130,7 +130,7 @@
 @keyframes pulse-blue {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 238, 255, 0.9); ;
+    box-shadow: 0 0 0 0 #00d1ffd1; ;
   }
 
   50% {
