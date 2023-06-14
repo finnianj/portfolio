@@ -108,8 +108,8 @@ label{
 .react-item-image{
   transform: scale(1);
   transition: transform 0.8s;
-  height: 10vw;
-  width: 10vw !important;
+  height: 20vw;
+  width: 20vw;
   margin-left: 20px;
   border-radius: 50%;
   object-fit: cover;
@@ -124,6 +124,7 @@ label{
 .item-image-holder{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .link{
