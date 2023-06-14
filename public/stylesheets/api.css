@@ -5,11 +5,11 @@ body{
 }
 
 .api-text{
-  color: #8F2D56 !important;
+  color: rgb(238, 88, 34) !important;
 }
 
 .api-link{
-  color: coral;
+  color: #D81159;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -30,7 +30,7 @@ body{
   width: auto;
   font-size: 3vw;
   padding: 1vw;
-  border: 5px solid yellowgreen;
+  border: 5px solid #aa8b56;
   border-radius: 10px;
 }
 
@@ -43,7 +43,7 @@ body{
   border-radius: 10px;
   background-color: gold;
   font-family: 'cherry';
-  border: 5px solid #aa8b56;
+  border: 5px solid #D81159;
   opacity: 100%;
   transition: 0.3s;
 }
@@ -123,7 +123,7 @@ right: 0;
 }
 
 h3{
-  color: #3a7a46;
+  color: #8F2D56;
   margin-bottom: 2vw;
   font-size: 8vw;
   font-weight: 100;
