@@ -3,13 +3,12 @@
 
 
 .api-text{
-  color: #209db0 !important;
+  color: yellowgreen !important;
 }
 
 .api-link{
-  color: rgb(94, 29, 155);
+  color: rgb(255, 0, 144, 0.9);
   cursor: pointer;
-  opacity: 100%;
   transition: 0.3s;
 }
 .api-link:hover{
@@ -29,8 +28,7 @@
   width: auto;
   font-size: 3vw;
   padding: 1vw;
-  border: 5px solid #209db0;
-  ;
+  border: 5px solid yellowgreen;
   border-radius: 10px;
 }
 
@@ -43,7 +41,7 @@
   border-radius: 10px;
   background-color: gold;
   font-family: 'cherry';
-  border: 5px solid black;
+  border: 5px solid #aa8b56;
   opacity: 100%;
   transition: 0.3s;
 }
@@ -123,6 +121,7 @@ right: 0;
 }
 
 h3{
+  color: #3a7a46;
   margin-bottom: 2vw;
   font-size: 8vw;
   font-weight: 100;

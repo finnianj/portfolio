@@ -37,17 +37,6 @@
         <div id="api-item-song" style="position: absolute; top: -20vh; left: 0"></div>
         <h3>Favourite Song Database</h3>
         <p>Let's make a playlist! You can post your favourite song here.</p>
-        <p>You can also check out what other people have submitted</p>
-        <br>
-        <form action="/api/song" method="post" target="_blank">
-          <h3>Submit a song</h3>
-          <input id="api-title" class="api-input" type="text" name="title" placeholder="title" required/>
-          <input id="api-artist" class="api-input" type="text" name="artist" placeholder="artist" required/>
-          <input id="api-submitted-by" class="api-input" type="text" name="submitted_by" placeholder="submitted by..." required/>
-          <input id="api-comment" class="api-input" type="text" name="comment" placeholder="comment" required/>
-          <br>
-          <input type="submit" id="song-submit" class="api-submit" value="Submit" />
-        </form>
         <p>
           <a href="/api/song" target="_blank" class="api-link" style="text-decoration: none;">
             <i class="fa-solid fa-music"></i>
@@ -55,6 +44,15 @@
             <i class="fa-solid fa-music"></i>
           </a>
         </p>
+        <form action="/api/song" method="post" target="_blank">
+          <p>Submit a song:</p>
+          <input id="api-title" class="api-input" type="text" name="title" placeholder="title" required/>
+          <input id="api-artist" class="api-input" type="text" name="artist" placeholder="artist" required/>
+          <input id="api-submitted-by" class="api-input" type="text" name="submitted_by" placeholder="submitted by..." required/>
+          <input id="api-comment" class="api-input" type="text" name="comment" placeholder="comment" required/>
+          <br>
+          <input type="submit" id="song-submit" class="api-submit" value="Submit" />
+        </form>
       </div>
 
       <div class="portfolio-item" >
