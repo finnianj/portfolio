@@ -155,6 +155,8 @@ body{
     opacity: 100%;
     /* transform: scale(1.1); */
     border-radius: 0;
+    cursor: pointer;
+
     width: 55vw;
     transition: 0.3s;
   }
