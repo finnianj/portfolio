@@ -7,7 +7,7 @@
 }
 
 .api-link{
-  color: rgb(255, 0, 144, 0.9);
+  color: coral;
   cursor: pointer;
   transition: 0.3s;
 }

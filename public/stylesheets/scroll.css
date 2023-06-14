@@ -153,6 +153,7 @@ label{
 }
 
 .fa-circle-info{
+  margin-left: 1vw;
   font-size: 3vw;
   align-self: flex-start;
   color: rgb(94, 29, 155);
