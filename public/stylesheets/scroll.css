@@ -149,8 +149,8 @@ label{
 }
 
 .info-popup{
+  visibility: hidden;
   opacity: 0%;
-  transition: 0.3s;
   position: fixed;
   top: 36vh;
   right: 25vw;
@@ -183,6 +183,7 @@ label{
 }
 
 .visible{
+  visibility: visible;
   display: block !important;
   opacity: 100%;
   transition: 0.5s;
