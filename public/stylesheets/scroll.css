@@ -59,7 +59,7 @@ label{
 }
 
 .portfolio-item{
-  width: 50%;
+  width: 70%;
   margin-top: 30vh;
   position: relative;
 }
@@ -80,11 +80,19 @@ label{
   align-items: center;
 }
 
+.item-image-holder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .item-image{
   transform: scale(1);
   transition: transform 0.8s;
   height: 40vw;
-  width: 40vw !important;
+  width: 40vw;
   max-width: 500px;
   max-height: 500px;
   border-radius: 50%;
@@ -106,25 +114,20 @@ label{
 }
 
 .react-item-image{
+  padding: 0.5vw;
   transform: scale(1);
   transition: transform 0.8s;
   height: 20vw;
   width: 20vw;
-  margin-left: 20px;
+  margin: 1vw;
   border-radius: 50%;
   object-fit: cover;
-  border: 8px solid #edebec;
 }
 
 .react-item-image:hover{
   transform: scale(1.1);
   transition: 0.3s;
-}
-
-.item-image-holder{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
 }
 
 .link{
