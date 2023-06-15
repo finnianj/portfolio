@@ -12,7 +12,7 @@
   /* font-family:Helvetica; */
   text-align:center;
   left: -190px;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 #sidebar a{
@@ -28,7 +28,7 @@
 
 #sidebar.show {
   transform: translate(190px);
-  transition: 1s;
+  transition: 1.5s;
 }
 
 #sidebar-text{

@@ -10,6 +10,7 @@ export function sidebar() {
 
   const handleClick = function(e) {
     e.preventDefault()
+    sidebar.classList.toggle('show')
     const name = e.currentTarget.classList[1].split('-')[1];
     const target = document.querySelector(`#${name}`)
     console.log(target);
@@ -18,12 +19,8 @@ export function sidebar() {
       top: text.scrollTop + target.getBoundingClientRect().top - 200,
       behaviour: 'smooth'
     })
-    setTimeout(() => {
-      sidebar.classList.toggle('show')
-    }, 2000)
+
   }
-
-
 
   Array.from(sidebarItems).forEach(i => {
     i.addEventListener('click', handleClick)
