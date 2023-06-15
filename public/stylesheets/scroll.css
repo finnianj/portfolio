@@ -236,6 +236,10 @@ label{
   color:#ef4581
 }
 
+#about-text p {
+  font-size: 2vw;
+}
+
 #finn{
   width: 150px;
   height: 150px;

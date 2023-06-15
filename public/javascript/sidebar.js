@@ -16,7 +16,7 @@ export function sidebar() {
     console.log(target);
     console.log(text.scrollTop);
     text.scrollTo({
-      top: text.scrollTop + target.getBoundingClientRect().top - 200,
+      top: text.scrollTop + target.getBoundingClientRect().top - 100,
       behaviour: 'smooth'
     })
 
