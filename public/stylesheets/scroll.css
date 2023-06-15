@@ -120,8 +120,8 @@ label{
   opacity: 80%;
   transform: scale(1);
   transition: 0.8s;
-  height: 20vw;
-  width: 20vw;
+  height: 40vw;
+  width: 40vw;
   margin: 1vw;
   border-radius: 50%;
   object-fit: cover;
@@ -219,4 +219,18 @@ label{
   font-size: 1vw;
 }
 
+@media (max-width:800px)  {
+  .react-item-image{
+    height: 60vw;
+    width: 60vw;
+  }
 
+}
+
+
+@media (min-width:1000px)  {
+  .react-item-image{
+    height: 30vw;
+    width: 30vw;
+  }
+}
