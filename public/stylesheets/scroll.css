@@ -234,6 +234,13 @@ li {
   color:#ef4581
 }
 
+#finn{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid coral;
+}
+
 /* ----------------------------- */
 
 @media (max-width:1000px)  {
