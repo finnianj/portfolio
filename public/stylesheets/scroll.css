@@ -120,8 +120,8 @@ label{
   opacity: 80%;
   transform: scale(1);
   transition: 0.8s;
-  height: 40vw;
-  width: 40vw;
+  height: 20vw;
+  width: 20vw;
   margin: 1vw;
   border-radius: 50%;
   object-fit: cover;
@@ -232,18 +232,26 @@ li {
 
 /* ----------------------------- */
 
-@media (max-width:800px)  {
+@media (max-width:1000px)  {
   .react-item-image{
-    height: 60vw;
-    width: 60vw;
+    height: 50vw;
+    width: 50vw;
+  }
+
+}
+@media (max-width:1000px)  {
+  .certificate{
+    height: 60vw !important;
+    width: 60vw !important;
   }
 
 }
 
 
-@media (min-width:1000px)  {
-  .react-item-image{
-    height: 30vw;
-    width: 30vw;
+@media (max-width:1500px)  {
+  .certificate{
+    height: 40vw !important;
+    width: 40vw !important;
   }
+
 }
