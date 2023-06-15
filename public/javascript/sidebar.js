@@ -7,11 +7,17 @@ export function sidebar() {
     sidebar.classList.toggle('show')
   })
 
-  const handleClick = function() {
+  const handleClick = function(e) {
+    
     setTimeout(function() {
       console.log(window.location.hash);
       const e = document.querySelector(window.location.hash)
-      e.scrollIntoView({ behaviour: 'smooth' })
+      e.scrollIntoView({
+        behaviour: 'smooth',
+        // block: 'start',
+        // inline: 'nearest',
+        offset: { top: -800 },
+      })
     }, 100)
   }
 
