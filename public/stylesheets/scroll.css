@@ -220,8 +220,9 @@ label{
   font-size: 1vw;
 }
 
-#skills > h4 {
+#skills h4 {
   font-size: 5vw;
+  color: #8f2d56;
   /* text-align: start; */
 }
 .skills-list > li {
