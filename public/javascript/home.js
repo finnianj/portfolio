@@ -22,3 +22,13 @@ overlay.addEventListener('click', () => {
     b.children[1].classList.remove('visible');
   });
 })
+
+window.onload = function() {
+  const hash = window.location.hash;
+  if (hash) {
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+};
