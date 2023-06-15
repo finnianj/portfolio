@@ -18,6 +18,9 @@ export function sidebar() {
       top: text.scrollTop + target.getBoundingClientRect().top - 200,
       behaviour: 'smooth'
     })
+    setTimeout(() => {
+      sidebar.classList.toggle('show')
+    }, 2000)
   }
 
 
