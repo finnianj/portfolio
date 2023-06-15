@@ -1,3 +1,5 @@
+export function 
+
 const dateInput = document.getElementById("date-input");
 const dateSubmit = document.getElementById("date-submit");
 const converterInput = document.getElementById("converter-input");
@@ -42,7 +44,3 @@ converterSubmit.addEventListener('click', (e) => {
   window.open(`/api/converter?value=${converterInput.value}`, '_blank');
   converterInput.value = ""
 })
-
-
-
-

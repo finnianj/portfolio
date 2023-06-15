@@ -18,6 +18,12 @@
 #sidebar a{
   text-decoration: none;
   color: #4d4d4d;
+  opacity: 100%;
+  transition: 0.3s;
+}
+#sidebar a:hover{
+  opacity: 70%;
+  transition: 0.3s;
 }
 
 #sidebar.show {
