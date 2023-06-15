@@ -8,22 +8,21 @@ export function sidebar() {
   })
 
   const handleClick = function(e) {
-    
-    setTimeout(function() {
-      console.log(window.location.hash);
-      const e = document.querySelector(window.location.hash)
-      e.scrollIntoView({
-        behaviour: 'smooth',
-        // block: 'start',
-        // inline: 'nearest',
-        offset: { top: -800 },
-      })
-    }, 100)
+    e.preventDefault()
+    const name = e.currentTarget.classList[1].split('-')[1];
+    const target = document.querySelector(`#${name}`)
+    console.log(target);
+    target.scrollIntoView({
+      behaviour: 'smooth'
+    })
   }
+
+
 
   Array.from(sidebarItems).forEach(i => {
     i.addEventListener('click', handleClick)
   });
+
 
 
 }
