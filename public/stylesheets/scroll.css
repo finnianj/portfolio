@@ -223,7 +223,7 @@ label{
   font-size: 5vw;
   /* text-align: start; */
 }
-li {
+.skills-list > li {
   list-style-type: none;
   text-align: start;
   font-size: 4vw;

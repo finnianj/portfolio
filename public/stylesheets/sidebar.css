@@ -85,3 +85,13 @@
   left: 26px;
   transform: rotate(115deg);
 }
+
+.menu-container{
+  height: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
