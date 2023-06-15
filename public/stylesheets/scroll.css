@@ -219,6 +219,16 @@ label{
   font-size: 1vw;
 }
 
+#skills > h4 {
+  font-size: 5vw;
+  /* text-align: start; */
+}
+li {
+  list-style-type: none;
+}
+
+/* ----------------------------- */
+
 @media (max-width:800px)  {
   .react-item-image{
     height: 60vw;
