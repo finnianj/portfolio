@@ -23,7 +23,7 @@ app.use(requestLogger)
 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/index.html'))
+  res.sendFile(path.join(__dirname, '/views/home.html'))
 })
 app.get('/api', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/api.html'))
