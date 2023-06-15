@@ -1,4 +1,5 @@
 #box1{
+  border: 1px solid black;
   /* z-index: 10; */
   position: fixed;
   top: 0;
@@ -10,6 +11,7 @@
   /* animation: pulse-pink 6s infinite; */
 }
 #box2{
+  border: 1px solid black;
   /* z-index: 10; */
   position: fixed;
   top: 0;
@@ -21,6 +23,7 @@
   /* animation: pulse-blue 4s infinite; */
 }
 #box3{
+  border: 1px solid black;
   /* z-index: 10; */
   position: fixed;
   bottom: 0;
@@ -33,6 +36,7 @@
   /* animation: pulse-green 5s infinite; */
 }
 #box4{
+  border: 1px solid black;
   /* z-index: 10; */
   position: fixed;
   bottom: 0;

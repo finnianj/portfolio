@@ -58,6 +58,7 @@
 }
 
 .char{
+  -webkit-text-stroke: 1px black;
   color: rgb(255, 191, 0, 0.9);
   text-shadow: #FC0 1px 0 15px;;
   position: absolute;
@@ -84,4 +85,3 @@
   left: 26px;
   transform: rotate(115deg);
 }
-
