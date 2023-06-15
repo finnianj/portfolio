@@ -2,6 +2,7 @@ export function sidebar() {
   const sidebarButton = document.getElementById('sidebar-button')
   const sidebar = document.getElementById('sidebar')
   const sidebarItems = document.getElementsByClassName('sidebar-item')
+  const text = document.getElementById('homepage-text')
 
   sidebarButton.addEventListener('click', () => {
     sidebar.classList.toggle('show')
@@ -12,7 +13,8 @@ export function sidebar() {
     const name = e.currentTarget.classList[1].split('-')[1];
     const target = document.querySelector(`#${name}`)
     console.log(target);
-    target.scrollIntoView({
+    text.scrollTo({
+      top: target.getBoundingClientRect().top - 200,
       behaviour: 'smooth'
     })
   }
