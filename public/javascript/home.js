@@ -1,14 +1,10 @@
-const sidebarButton = document.getElementById('sidebar-button')
-const sidebar = document.getElementById('sidebar')
+import { sidebar } from './sidebar.js'
+sidebar()
+
 const overlay = document.getElementById('overlay')
 const text = document.getElementById('homepage-text')
-
-// const sidebarText = document.getElementById('sidebar-text')
 const infoButtons = document.getElementsByClassName('info-wrapper')
-sidebarButton.addEventListener('click', () => {
-  console.log('clicked');
-  sidebar.classList.toggle('show')
-})
+
 
 Array.from(infoButtons).forEach(b => {
   b.children[0].addEventListener('click', (e) => {
@@ -26,3 +22,17 @@ overlay.addEventListener('click', () => {
     b.children[1].classList.remove('visible');
   });
 })
+
+// window.onload = function() {
+//   setTimeout(function() {
+//     const hash = window.location.hash;
+//     if (hash) {
+//       const targetElement = document.querySelector(hash);
+//       if (targetElement) {
+//         targetElement.scrollIntoView({ behavior: 'smooth' });
+//       }
+//     }
+//   }, 1000)
+// };
+
+

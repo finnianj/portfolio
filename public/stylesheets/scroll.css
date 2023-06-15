@@ -20,6 +20,7 @@
   width: 100%;
   padding-bottom: 200px;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 .text-fade{
@@ -43,7 +44,7 @@ h2{
 }
 
 .item-top > h3{
-  font-size: 6vw;
+  font-size: 7vw;
   margin-bottom: 3vw;
 }
 .portfolio-item > * {
@@ -217,4 +218,54 @@ label{
 }
 .software-list {
   font-size: 1vw;
+}
+
+#skills h4 {
+  font-size: 5vw;
+  color: #8f2d56;
+  /* text-align: start; */
+}
+.skills-list > li {
+  list-style-type: none;
+  text-align: start;
+  font-size: 4vw;
+  color: #ef4581;
+}
+
+#about{
+  color:#ef4581
+}
+
+#about-text p {
+  font-size: 2vw;
+}
+
+#finn{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid coral;
+}
+
+/* ----------------------------- */
+
+@media (max-width:1000px)  {
+  .react-item-image{
+    height: 50vw;
+    width: 50vw;
+  }
+
+}
+@media (max-width:1500px)  {
+  .certificate{
+    height: 40vw !important;
+    width: 40vw !important;
+  }
+
+}
+@media (max-width:1000px)  {
+  .certificate{
+    height: 60vw !important;
+    width: 60vw !important;
+  }
 }
