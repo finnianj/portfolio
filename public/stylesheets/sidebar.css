@@ -1,6 +1,6 @@
 #sidebar {
   position:absolute;
-  height:100vh;
+  height:100%;
   /* background-color:#01848f; */
   background-color:rgb(205 167 119);
   width:190px;
