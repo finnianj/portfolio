@@ -43,7 +43,7 @@ h2{
 }
 
 .item-top > h3{
-  font-size: 6vw;
+  font-size: 7vw;
   margin-bottom: 3vw;
 }
 .portfolio-item > * {
@@ -225,6 +225,9 @@ label{
 }
 li {
   list-style-type: none;
+  text-align: start;
+  font-size: 4vw;
+  color: #ef4581;
 }
 
 /* ----------------------------- */
