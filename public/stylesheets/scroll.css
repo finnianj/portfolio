@@ -239,19 +239,16 @@ li {
   }
 
 }
-@media (max-width:1000px)  {
-  .certificate{
-    height: 60vw !important;
-    width: 60vw !important;
-  }
-
-}
-
-
 @media (max-width:1500px)  {
   .certificate{
     height: 40vw !important;
     width: 40vw !important;
   }
 
+}
+@media (max-width:1000px)  {
+  .certificate{
+    height: 60vw !important;
+    width: 60vw !important;
+  }
 }
