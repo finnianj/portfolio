@@ -13,8 +13,6 @@ export function sidebar() {
     sidebar.classList.toggle('show')
     const name = e.currentTarget.classList[1].split('-')[1];
     const target = document.querySelector(`#${name}`)
-    console.log(target);
-    console.log(text.scrollTop);
     text.scrollTo({
       top: text.scrollTop + target.getBoundingClientRect().top - 100,
       behaviour: 'smooth'
