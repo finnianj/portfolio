@@ -17,6 +17,7 @@ var bodyParser = require('body-parser');
     next()
   }
 
+//if node_env dev then use unbundled files
 
   app.use(express.static('public'))
   // app.use('/galaxy', express.static('public/bundled'))
