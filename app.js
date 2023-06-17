@@ -18,8 +18,8 @@ var bodyParser = require('body-parser');
   }
 
 
-  app.use('/', express.static('public'))
-  app.use('/api', express.static('public'))
+  app.use(express.static('public'))
+  app.use(express.static('javascript'))
   app.use(requestLogger)
 
 
