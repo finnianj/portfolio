@@ -19,6 +19,7 @@ var bodyParser = require('body-parser');
 
 
   app.use(express.static('public'))
+  app.use('/galaxy', express.static('public/bundled'))
   app.use(express.static('javascript'))
   app.use(requestLogger)
 
@@ -31,7 +32,7 @@ var bodyParser = require('body-parser');
     res.sendFile(path.join(__dirname, '/views/api.html'))
   })
   app.get('/galaxy', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/galaxy.html'))
+    res.sendFile(path.join(__dirname, '/public/bundled/index.html'))
   })
 
   songAPIRoutes(app);
