@@ -1,14 +1,17 @@
-// module.exports = {
-//   root: '/',
-//   publicDir: '/public/',
-//   base: './',
-//   build: {
-//     rollupOptions: {
-//       input: {
-//         home: './home.html',
-//         api: './api.html',
-//         galaxy: './galaxy.html',
-//       },
+// const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env
+
+// export default {
+//     root: '/views/galaxy.html',
+//     base: './',
+//     server:
+//     {
+//         host: true,
+//         open: !isCodeSandbox // Open if it's not a CodeSandbox
 //     },
-//   },
-// };
+//     build:
+//     {
+//         outDir: '../dist',
+//         emptyOutDir: true,
+//         sourcemap: true
+//     }
+// }

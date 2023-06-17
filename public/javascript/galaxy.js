@@ -192,9 +192,9 @@ const canvas = document.querySelector('canvas.webgl')
 const text = document.getElementById('text-grid')
 const welcome = document.getElementById('welcome')
 
-button.addEventListener('click', () => {
-  document.querySelector('audio').currentTime = 6;
-  document.querySelector('audio').play()
+// button.addEventListener('click', () => {
+  // document.querySelector('audio').currentTime = 6;
+  // document.querySelector('audio').play()
   center.classList.add('animate__fadeOutDown')
 
   setTimeout(() => {
@@ -213,7 +213,7 @@ button.addEventListener('click', () => {
     text.style.visibility = 'visible'
 
   }, 11000);
-})
+// })
 
 // center.style.display = 'none'
 // runProgram()
