@@ -4,7 +4,7 @@ const overlay = document.getElementById('overlay')
 const textContainer = document.getElementById('homepage-text')
 const infoButtons = document.getElementsByClassName('info-wrapper')
 
-sidebar(textContainer)
+sidebar()
 
 Array.from(infoButtons).forEach(b => {
   b.children[0].addEventListener('click', (e) => {

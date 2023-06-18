@@ -16,6 +16,5 @@ export function scroll(items, container, s = false) {
   Array.from(items).forEach(i => {
     i.addEventListener('click', handleClick)
   });
-
-
+  
 }

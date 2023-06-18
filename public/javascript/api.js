@@ -1,4 +1,7 @@
 import { scroll } from './scroll.js'
+import { sidebar } from './sidebar.js'
+
+sidebar()
 
 const dateInput = document.getElementById("date-input");
 const dateSubmit = document.getElementById("date-submit");
