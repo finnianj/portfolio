@@ -42,7 +42,8 @@ var bodyParser = require('body-parser');
     res.sendFile(path.join(__dirname, '/views/api.html'))
   })
   app.get('/galaxy', (req, res) => {
-    res.sendFile(path.join(__dirname, '/importmapgalaxy/importmap.html'))
+    res.sendFile(path.join(__dirname, '/galaxy/index.html'))
+    // res.sendFile(path.join(__dirname, '/importmapgalaxy/importmap.html'))
     // res.sendFile(path.join(__dirname, '/public/bundled/index.html'))
   })
 
