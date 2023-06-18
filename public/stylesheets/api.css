@@ -4,57 +4,6 @@ body{
   background-color: #ffbd429c !important;
 }
 
-#api-text{
-  color: rgb(238, 88, 34) !important;
-}
-
-.api-link{
-  color: #D81159;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.api-link:hover{
-  opacity: 70%;
-  transition: 0.3s;
-}
-
-
-#ip-button{
-  height: 50px;
-}
-
-.api-input{
-  font-family: 'cherry';
-  margin-top: 2vw;
-  height: 3vw;
-  width: auto;
-  font-size: 3vw;
-  padding: 1vw;
-  border: 5px solid #aa8b56;
-  border-radius: 10px;
-}
-
-.api-submit{
-  margin-top: 2vw;
-  font-size: 3vw;
-  width: auto;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  border-radius: 10px;
-  background-color: gold;
-  font-family: 'cherry';
-  border: 5px solid #D81159;
-  opacity: 100%;
-  transition: 0.3s;
-}
-
-.api-submit:hover{
-  opacity: 80%;
-  transform: scale(1.1);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 #api-top-right{
   position: fixed;
   top: 0;
@@ -108,7 +57,7 @@ body{
 #api-bottom-right{
   position: fixed;
   bottom: 0;
-right: 0;
+  right: 0;
   width: 8vw;
   height: 8vw;
   background-color: #AA8B56;
@@ -116,18 +65,63 @@ right: 0;
   /* animation: pulse-yellow 7s infinite; */
 }
 
+#api-text{
+  color: rgb(238, 88, 34) !important;
+}
+
+h2{
+  font-size: 7vw;
+}
+
 h3{
   color: #8F2D56;
   margin-bottom: 2vw;
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 100;
 }
 
-/* hr{
-  border: 3px solid #209db0;
+p{
+  font-size: 4vw;
+}
+
+.api-link{
+  color: #D81159;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.api-link:hover{
+  opacity: 70%;
+  transition: 0.3s;
+}
+
+.api-input{
+  font-family: 'cherry';
+  margin-top: 2vw;
+  height: 3vw;
+  width: auto;
+  font-size: 3vw;
+  padding: 1vw;
+  border: 5px solid #aa8b56;
   border-radius: 10px;
-  width:30%;
-} */
+}
 
+.api-submit{
+  margin-top: 2vw;
+  font-size: 3vw;
+  width: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 10px;
+  background-color: gold;
+  font-family: 'cherry';
+  border: 5px solid #D81159;
+  opacity: 100%;
+  transition: 0.3s;
+}
 
-/* converter input */
+.api-submit:hover{
+  opacity: 80%;
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
