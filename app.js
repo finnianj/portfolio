@@ -20,6 +20,7 @@ var bodyParser = require('body-parser');
 //if node_env dev then use unbundled files
 
   app.use(express.static('public'))
+  // app.use(express.static('javascript'))
 
   // for production:
   // app.use('/galaxy', express.static('public/bundled'))
@@ -29,8 +30,7 @@ var bodyParser = require('body-parser');
 
   // for import maps
   // app.use('/galaxy', express.static('importmapgalaxy'))
-  
-  app.use(express.static('javascript'))
+
   app.use(requestLogger)
 
 
