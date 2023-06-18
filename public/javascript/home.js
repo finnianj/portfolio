@@ -6,7 +6,6 @@ const infoButtons = document.getElementsByClassName('info-wrapper')
 
 sidebar(textContainer)
 
-
 Array.from(infoButtons).forEach(b => {
   b.children[0].addEventListener('click', (e) => {
     textContainer.classList.toggle('text-fade')
@@ -23,4 +22,3 @@ overlay.addEventListener('click', () => {
     b.children[1].classList.remove('visible');
   });
 })
-

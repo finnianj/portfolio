@@ -1,4 +1,3 @@
-// import { sidebar } from "./sidebar.js";
 import { scroll } from './scroll.js'
 
 const dateInput = document.getElementById("date-input");
@@ -19,7 +18,6 @@ converterSubmit.addEventListener('click', (e) => {
   window.open(`/api/converter?value=${converterInput.value}`, '_blank');
   converterInput.value = ""
 })
-
 
 const apiLinks = document.getElementsByClassName('api-link')
 const apiText = document.getElementById('api-text')
