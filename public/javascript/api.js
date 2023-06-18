@@ -48,12 +48,13 @@ converterSubmit.addEventListener('click', (e) => {
 // sidebar()
 
 
-const apiItems = document.getElementsByClassName('api-item')
+const apiLinks = document.getElementsByClassName('api-link')
 
 
 const handleAPIClick = function(e) {
   e.preventDefault()
-  const name = e.currentTarget.classList[1].split('-')[2];
+  const name = e.currentTarget.id.split('-')[2];
+  console.log(name);
   const target = document.querySelector(`#${name}`)
   text.scrollTo({
     top: text.scrollTop + target.getBoundingClientRect().top - 100,
@@ -62,6 +63,6 @@ const handleAPIClick = function(e) {
 
 }
 
-Array.from(apiItems).forEach(i => {
+Array.from(apiLinks).forEach(i => {
   i.addEventListener('click', handleAPIClick)
 });
