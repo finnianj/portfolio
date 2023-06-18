@@ -17,14 +17,8 @@ var bodyParser = require('body-parser');
     next()
   }
 
-
   app.use(express.static('public'))
-  // app.use('/galaxy', express.static('public/bundled'))
-  app.use('/galaxy', express.static('importmapgalaxy'))
-  app.use(express.static('javascript'))
   app.use(requestLogger)
-
-
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'))
@@ -32,15 +26,24 @@ var bodyParser = require('body-parser');
   app.get('/api', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/api.html'))
   })
-  app.get('/galaxy', (req, res) => {
-    res.sendFile(path.join(__dirname, '/importmapgalaxy/importmap.html'))
-    // res.sendFile(path.join(__dirname, '/public/bundled/index.html'))
-  })
+
 
   songAPIRoutes(app);
   userAPIRoutes(app);
   dateAPIRoutes(app);
   converterAPIRoutes(app);
+
+  if (process.env.NODE_ENV === 'production') {
+    app.use('/galaxy', express.static('public/bundled'))
+    app.get('/galaxy', (req, res) => {
+      res.sendFile(path.join(__dirname, '/public/bundled/index.html'))
+    })
+  } else {
+    app.use('/galaxy', express.static('importmapgalaxy'))
+    app.get('/galaxy', (req, res) => {
+      res.sendFile(path.join(__dirname, '/importmapgalaxy/importmap.html'))
+    })
+  }
 
   app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, '404.html'))

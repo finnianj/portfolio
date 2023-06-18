@@ -3,6 +3,7 @@
   height:100%;
   /* background-color:#01848f; */
   background-color:rgb(205 167 119);
+  border-right: 3px solid rgb(255, 191, 0);
   width:190px;
   margin-left:0;
   z-index: 1;
@@ -11,7 +12,7 @@
   color:#f1f1f2;
   /* font-family:Helvetica; */
   text-align:center;
-  left: -190px;
+  left: -193px;
   transition: 1s;
 }
 
@@ -27,7 +28,7 @@
 }
 
 #sidebar.show {
-  transform: translate(190px);
+  transform: translate(193px);
   transition: 1s;
 }
 

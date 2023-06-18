@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/api.css">
+    <link rel="stylesheet" href="/stylesheets/api.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Api</title>
   </head>
@@ -24,7 +24,7 @@
   <div id="api-bottom-right"></div>
 
   <div id="container">
-    <div class="text api-text">
+    <div id="api-text" class="text">
       <h2 class="title">Welcome to my API!</h2>
       <h2>Here you can play around with some Microservices I have coded:</h2>
         <p class="api-link" id="link-to-song">Favourite Song Database</p>
@@ -33,8 +33,8 @@
         <p class="api-link" id="link-to-date">UNIX Time Converter</p>
       <h2>Enjoy!</h2>
 
-      <div class="portfolio-item">
-        <div id="api-item-song" style="position: absolute; top: -20vh; left: 0"></div>
+      <div id="song" class="portfolio-item">
+        <div style="position: absolute; top: -20vh; left: 0"></div>
         <h3>Favourite Song Database</h3>
         <p>Let's make a playlist! You can post your favourite song!</p>
         <p>
@@ -55,8 +55,8 @@
         </form>
       </div>
 
-      <div class="portfolio-item" >
-        <div id="api-item-ip" style="position: absolute; top: -20vh; left: 0"></div>
+      <div id="ip" class="portfolio-item" >
+        <div style="position: absolute; top: -20vh; left: 0"></div>
 
         <h3>Client IP API</h3>
         <p>This API retrieves data from you, the client, when you make an HTTP request by clicking the link below. </p>
@@ -67,8 +67,8 @@
         </p>
       </div>
 
-      <div class="portfolio-item">
-        <div id="api-item-date" style="position: absolute; top: -20vh; left: 0"></div>
+      <div id="date" class="portfolio-item">
+        <div style="position: absolute; top: -20vh; left: 0"></div>
         <h3>Unix Time Converter</h3>
         <p>Unix time is the number of seconds since January 1st, 1970, GMT.</p>
         <p>Since it can be represented as a single number, it is often used in programming.</p>
@@ -87,8 +87,8 @@
         <input type="submit" id="date-submit" class="api-submit" value="Submit">
       </div>
 
-      <div class="portfolio-item" >
-        <div id="api-item-converter" style="position: absolute; top: -20vh; left: 0"></div>
+      <div id="converter" class="portfolio-item">
+        <div style="position: absolute; top: -20vh; left: 0"></div>
         <h3>Metric/Imperial Converter</h3>
         <p>You can use this service to convert values between the Metric and Imperial systems.</p>
         <p>Although most of the world uses the metric system, countries like the UK and USA still use Imperial.</p>
@@ -105,24 +105,25 @@
     </div>
   </div>
 
-  <!-- <div id="sidebar">
+  <div id="sidebar">
     <div id="sidebar-text">
       <h3>Menu</h3>
     </div>
     <div class="line"></div>
     <div class="menu-projects">
-      <a href="/#moss" class="sidebar-redirect">Moss Radio</a>
-      <a href="/#widgets" class="sidebar-redirect">React Widgets</a>
-      <a href="/#data-visualisation" class="sidebar-redirect">Data Visualisations</a>
-      <a href="/api/">My API</a>
+      <a href="" id="link-to-song" class="sidebar-link">Favourite Song</a>
+      <a href="" id="link-to-ip" class="sidebar-link">Ip Info</a>
+      <a href="" id="link-to-converter" class="sidebar-link">Metric/Imperial</a>
+      <a href="" id="link-to-date" class="sidebar-link">Unix Time</a>
+      <a href="/" style="color: #8f2d56;">Home</a>
     </div>
     <div class="menu-container">
       <div class="menu-lower">
-        <a href="/#skills" class="sidebar-redirect">Skills</a>
-        <a href="/#certifications" class="sidebar-redirect">Certifications</a>
-        <a href="/#about" class="sidebar-redirect">About me</a>
+        <a href="/#skills" id="link-to-skills">Skills</a>
+        <a href="/#certifications" id="link-to-certifications">Certifications</a>
+        <a href="/#about" id="link-to-about">About me</a>
       </div>
-      <a href="/rock">🤘 Rock Mode 🤘</a>
+      <a href="/galaxy" >🤘 Rock Mode 🤘</a>
     </div>
     <div id="sidebar-button">
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -134,8 +135,8 @@
         <span class="char" id="char4">u</span>
       </div>
     </div>
-  </div> -->
+  </div>
 
-  <script src="javascript/api.js" type="module"></script>
+  <script src="/javascript/api.js" type="module"></script>
 </body>
 </html>
