@@ -10,7 +10,7 @@ export function sidebar() {
     sidebar.classList.toggle('show')
   })
 
-  scroll(sidebarLinks, text)
+  scroll(sidebarLinks, text, sidebar)
 
   // const handleClick = function(e) {
   //   e.preventDefault()
