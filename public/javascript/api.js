@@ -1,5 +1,5 @@
 // import { sidebar } from "./sidebar.js";
-
+const apiText = document.getElementById('api-text')
 const dateInput = document.getElementById("date-input");
 const dateSubmit = document.getElementById("date-submit");
 const converterInput = document.getElementById("converter-input");
@@ -56,8 +56,8 @@ const handleAPIClick = function(e) {
   const name = e.currentTarget.id.split('-')[2];
   console.log(name);
   const target = document.querySelector(`#${name}`)
-  text.scrollTo({
-    top: text.scrollTop + target.getBoundingClientRect().top - 100,
+  apiText.scrollTo({
+    top: apiText.scrollTop + target.getBoundingClientRect().top - 100,
     behaviour: 'smooth'
   })
 
