@@ -22,6 +22,6 @@ converterSubmit.addEventListener('click', (e) => {
   converterInput.value = ""
 })
 
-const apiLinks = document.getElementsByClassName('api-link')
+const apiLinks = document.getElementsByClassName('api-link-top')
 const apiText = document.getElementById('api-text')
 scroll(apiLinks, apiText)
