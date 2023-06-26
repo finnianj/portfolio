@@ -18,10 +18,14 @@ var bodyParser = require('body-parser');
   }
 
   app.use(express.static('public'))
+  app.use('/', express.static('bundled'))
   app.use(requestLogger)
 
   app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
+    res.sendFile(path.join(__dirname, '/bundled/index.html'))
+  })
+  app.get('/simple', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/simple.html'))
   })
   app.get('/api', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/api.html'))
