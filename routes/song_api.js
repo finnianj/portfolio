@@ -52,7 +52,6 @@ module.exports = function (app) {
 
     new_song.save()
       .then((data) => {
-          console.log("Created song: " + data)
           res.json({
             title: data.title,
             artist: data.artist,
