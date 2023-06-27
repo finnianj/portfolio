@@ -6,6 +6,7 @@ const songAPIRoutes = require('./routes/song_api.js');
 const userAPIRoutes = require('./routes/user_api.js');
 const dateAPIRoutes = require('./routes/date_api.js');
 const converterAPIRoutes = require('./routes/converter_api.js')
+const moonAPIRoutes = require('./routes/moon_api.js')
 
 var bodyParser = require('body-parser');
 
@@ -36,6 +37,7 @@ var bodyParser = require('body-parser');
   userAPIRoutes(app);
   dateAPIRoutes(app);
   converterAPIRoutes(app);
+  moonAPIRoutes(app);
 
   if (process.env.NODE_ENV === 'production') {
     app.use('/galaxy', express.static('public/bundled'))
