@@ -17,7 +17,7 @@
   align-items: center;
   text-align: center;
   height: 100%;
-  width: 100%;
+  width: 80%;
   padding-bottom: 200px;
   overflow: scroll;
   scroll-behavior: smooth;
@@ -237,7 +237,7 @@ label{
 }
 
 #about-text p {
-  font-size: 2vw;
+  font-size: 20px;
 }
 
 #finn{
