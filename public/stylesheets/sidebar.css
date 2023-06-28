@@ -21,6 +21,7 @@
   color: #4d4d4d;
   opacity: 100%;
   transition: 0.3s;
+  display: block;
 }
 #sidebar a:hover{
   opacity: 70%;
