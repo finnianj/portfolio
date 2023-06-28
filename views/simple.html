@@ -9,20 +9,13 @@
   <title>Homepage</title>
 </head>
 <body>
-      <div id="box1">
-        <!-- <div id="box5"></div> -->
-      </div>
-      <div id="box2">
-        <!-- <div id="box6"></div> -->
-      </div>
-      <div id="box3">
-        <!-- <div id="box7"></div> -->
-      </div>
-      <div id="box4">
-        <!-- <div id="box8"></div> -->
-      </div>
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+      <div id="box4"></div>
       <div id="container">
         <div id="homepage-text" class="text text-fade">
+
 
           <h2 class="title">Hello.</h2>
           <h2>Let's keep things simple.</h2>
@@ -108,25 +101,6 @@
             </div>
           </div>
 
-          <div class="portfolio-item">
-            <div id="overlay" class="overlay-hidden"></div>
-            <div class="item-top">
-              <div class="item-top-offset"></div>
-              <h3>3D Rendering</h3>
-              <div class="info-wrapper">
-                <i class="fa-solid fa-circle-info"></i>
-                <div class="info-popup">
-                  <p class="info-text">Some basic visualisations using D3.js: A choropleth map of US Education Data, a band scale graph of global temperature variance, and a tree map of the highest grossing films of all time.</p>
-                  <p class="software-list"><em>Three.js</em></p>
-                </div>
-              </div>
-            </div>
-            <div class="item-image-holder">
-              <a href="https://finnshouse.vercel.app/" target="_blank"><img src="images/spooky.png" class="react-item-image"></a>
-              <a href="https://codepen.io/finnianj/pen/poObEpO" target="_blank"><img src="images/spooky.png" class="react-item-image"></a>
-            </div>
-          </div>
-
           <div class="portfolio-item" id="skills">
             <div class="item-top">
               <h3>Skills</h3>
@@ -150,7 +124,7 @@
                 <li>Express.js</li>
                 <li>MongoDB</li>
                 <li>PostgreSQL</li>
-                <li>Quality assurance with Mocha/Chai.js </li>
+                <li>QA with Mocha/Chai.js </li>
                 <li>Heroku</li>
                 <li>Vite</li>
                 <li>Vercel</li>
@@ -161,16 +135,8 @@
           </div>
 
           <div class="portfolio-item">
-            <div id="overlay" class="overlay-hidden"></div>
             <div class="item-top">
               <h3 id="certifications">Certifications</h3>
-              <div class="info-wrapper">
-                <i class="fa-solid fa-circle-info"></i>
-                <div class="info-popup">
-                  <p class="info-text">Some fun widgets made with front-end libraries such as React and JQuery.</p>
-                  <p class="software-list"><em>React, JQuery, Javascript.</em></p>
-                </div>
-              </div>
             </div>
             <div class="item-image-holder">
               <a href="https://kitt.lewagon.com/schoolings/22767/public_diploma?token=0b5dfa10a908f7e729afebfc8f26c892e2925f2226c51689d4f56c5725090578" target="_blank"><img src="images/certifications/wagoncert.png" class="certificate react-item-image"></a>
@@ -188,12 +154,30 @@
               <h3 id="about">About me</h3>
             </div>
             <div id="about-text">
-              <p>After completing my BA in German & Russian at the University of Bristol, I moved to Berlin in 2020 to pursue drumming. Although I still play in bands and occasionally teach, I realised fairly quickly that I wanted to earn my living another way.</p>
-              <p>Last year I completed a bootcamp at Le Wagon and became fully immersed in the process of learning again. Coding unites many of my interests. It is fundamentally based in language, logic and creativity, and this sort of puzzle solving mentality realy catalysed my curiosity.</p>
-              <p>Since the bootcamp, I have been eager to discover as many aspects of computer science as possible. Currently I am exploring Angular and Three.js.</p>
+              <p>Hi there!</p>
+              <p>My name is Finn. I'm a creative software developer from the UK. I'm 27.</p>
+              <p>Last year I completed a coding bootcamp and became immersed in the process of learning a new skill. Coding unites many of my interests; it is fundamentally based in language, logic and creativity, and this sort of puzzle solving mentality really catalysed my curiosity.</p>
+              <p>After completing my BA in German & Russian at the University of Bristol, I moved to Berlin in 2020 to pursue drumming. Although I still play in bands and occasionally teach, I prefer to do it non-professionally.</p>
+              <p>Now I am eager to discover as many aspects of computer science as possible. Currently I am exploring Angular and Three.js, but I am always ready for something new.</p>
               <p>Thanks for checking out my website. Remember to <a href="/api" target="_blank" style="text-decoration: none;">add your favourite song to my playlist API!</a> Have a great day.</p>
               <p>Finn</p>
               <img src="images/finn.png" id="finn">
+            </div>
+          </div>
+
+          <div id="contact">
+            <h4>Contact</h4>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon link-item"></i>
+              <p>charltonjones.jones@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-github contact-icon"></i>
+              <p class="link"><a href="https://github.com/finnianj" target="_blank">finnianj</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin-in contact-icon"></i>
+              <p class="link"><a href="https://www.linkedin.com/in/finnianj/" target="_blank">Finnian Charlton-Jones</a></p>
             </div>
           </div>
 
@@ -221,8 +205,9 @@
             <a href="" id="link-to-skills" class="sidebar-link">Skills</a>
             <a href="" id="link-to-certifications" class="sidebar-link">Certifications</a>
             <a href="" id="link-to-about" class="sidebar-link">About me</a>
+            <a href="" id="link-to-contact" class="sidebar-link">Contact</a>
           </div>
-          <a href="/galaxy" >🤘 Rock Mode 🤘</a>
+          <a href="/" >🦑 Ocean Mode</a>
         </div>
         <div id="sidebar-button">
           <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -235,15 +220,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div id="lemon">
-        <div id="lemon-inner-first">
-          <div id="lemon-inner-second">
-            <div id="lemon-inner-third">
-            </div>
-          </div>
-        </div>
-      </div> -->
 
       <script src="../javascript/home.js" type="module"></script>
 </body>
