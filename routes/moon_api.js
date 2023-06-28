@@ -32,6 +32,19 @@ let Winner = mongoose.model('Winner', winnerSchema);
 //     console.log("Error: " + err)
 // });
 
+const parseData = (data) => {
+  let newData = []
+  data.map((i) => {
+    i = {
+      name: i.name,
+      comment: i.comment,
+      date: i.date.split(",")[0]
+    }
+    newData.push(i)
+  })
+  return newData
+}
+
 module.exports = function (app) {
 
   app.post('/winners', function(req, res) {
@@ -46,7 +59,7 @@ module.exports = function (app) {
       .then(() => {
         Winner.find({})
         .then(data => {
-          res.json(data)
+          res.json(parseData(data))
         })
         .catch(err => {
           console.log(err)
@@ -62,7 +75,7 @@ module.exports = function (app) {
   app.get('/winners', function(req, res) {
     Winner.find({})
     .then(data => {
-      res.json(data)
+      res.json(parseData(data))
     })
     .catch(err => {
       console.log(err)
