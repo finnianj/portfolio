@@ -254,6 +254,7 @@ label{
 .contact-item p, a{
   font-size: 20px;
   text-decoration: none;
+  color: rgb(110, 34, 182);
 }
 
 .contact-icon{
@@ -262,6 +263,11 @@ label{
   justify-content: space-evenly;
   height: 10px;
   font-size: 40px;
+}
+
+.contact h4{
+  margin-top: 100px;
+  font-size: 50px;
 }
 
 /* ----------------------------- */
