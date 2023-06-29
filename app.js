@@ -13,9 +13,8 @@ var bodyParser = require('body-parser');
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
 
-  app.use('/', express.static('bundled'))
-  app.use('/simple', express.static('public'))
-  app.use('/api', express.static('public'))
+  app.use(express.static('public'))
+  app.use(express.static('bundled'))
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/bundled/index.html'))
