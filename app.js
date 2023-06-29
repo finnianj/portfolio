@@ -13,16 +13,9 @@ var bodyParser = require('body-parser');
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
 
-  const requestLogger = (req, res, next) => {
-    console.log(`\n${req.method} request made to: ${req.url}\n`);
-    next()
-  }
-
-  app.use(express.static('public'))
   app.use('/', express.static('bundled'))
   app.use('/simple', express.static('public'))
   app.use('/api', express.static('public'))
-  app.use(requestLogger)
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/bundled/index.html'))
