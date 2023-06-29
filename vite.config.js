@@ -1,7 +1,8 @@
 const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env
 
 export default {
-    root: 'galaxy/',
+    root: 'simple/',
+    publicDir: '../bundled/',
     base: './',
     server:
     {
@@ -10,7 +11,7 @@ export default {
     },
     build:
     {
-        outDir: '../public/bundled',
+        outDir: './simplebundle',
         emptyOutDir: true,
         sourcemap: true
     }

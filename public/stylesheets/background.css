@@ -8,7 +8,7 @@
   height: 200px;
   background-color: rgb(255, 0, 144);
   border-bottom-right-radius: 100%;
-  animation: pulse-pink 6s infinite;
+  animation: pulse-pink 15s infinite;
 }
 #box2{
   /* border: 1px solid black; */
@@ -20,7 +20,7 @@
   height: 100px;
   background-color: #00d1ffd1;
   border-bottom-left-radius: 100%;
-  animation: pulse-blue 4s infinite;
+  animation: pulse-blue 11s infinite;
 }
 #box3{
   /* border: 1px solid black; */
@@ -33,7 +33,7 @@
   background-color: #00ce75d1;
   border-top-right-radius: 100%;
   align-self: end;
-  animation: pulse-green 5s infinite;
+  animation: pulse-green 13s infinite;
 }
 #box4{
   /* border: 1px solid black; */
@@ -45,7 +45,7 @@
   height: 300px;
   background-color: rgb(255, 191, 0);
   border-top-left-radius: 100%;
-  animation: pulse-yellow 7s infinite;
+  animation: pulse-yellow 17s infinite;
 }
 
 
