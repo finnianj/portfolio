@@ -1,4 +1,4 @@
-function ConvertHandler() {
+export default function ConvertHandler() {
 
   this.getNum = function(input) {
     let test = input.match(/mi$|kg$|gal$|l$|km$|lbs$/i)
@@ -91,4 +91,3 @@ function ConvertHandler() {
 
 }
 
-module.exports = ConvertHandler;

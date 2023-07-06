@@ -22,13 +22,13 @@ const convertDate = (date) => {
 
 }
 
-module.exports = function(app) {
-  app.get("/api/date", function(req, res, next) {
+export default function(app) {
+  app.get("/myapi/date", function(req, res, next) {
     return res.json({ "unix": Date.now(), "utc": new Date(Date.now()).toGMTString() })
     next();
   })
 
-  app.get("/api/date/:date", function(req, res) {
+  app.get("/myapi/date/:date", function(req, res) {
     let conversion = convertDate(req.params.date)
     if (conversion[0] == "I" || conversion[0] == "Invalid Date") {
       res.json({ "error": "Invalid date"} )

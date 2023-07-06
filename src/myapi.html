@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <title>Api</title>
+  </head>
+<body id="api-body">
+
+  <div id="api-top-right">
+    <div id="api-top-right-inner"></div>
+  </div>
+  <div id="api-bottom-left">
+    <div id="api-bottom-left-inner"></div>
+  </div>
+  <div id="api-top-left"></div>
+  <div id="api-bottom-right"></div>
+
+  <div id="container">
+    <div id="api-text" class="text">
+      <h2 class="title">Welcome to my API!</h2>
+      <h2>Here you can play around with some Microservices I have coded:</h2>
+        <p class="api-link api-link-top" id="link-to-song">Favourite Song Database</p>
+        <p class="api-link api-link-top" id="link-to-ip">IP Info</p>
+        <p class="api-link api-link-top" id="link-to-converter">Metric to Imperial Converter</p>
+        <p class="api-link api-link-top" id="link-to-date">UNIX Time Converter</p>
+      <h2>Enjoy!</h2>
+
+      <div id="song" class="portfolio-item">
+        <div style="position: absolute; top: -20vh; left: 0"></div>
+        <h3>Favourite Song Database</h3>
+        <p>Let's make a playlist! You can post your favourite song!</p>
+        <p>
+          <a href="/myapi/song" target="_blank" class="api-link" style="text-decoration: none;">
+            <i class="fa-solid fa-music"></i>
+            See the playlist
+            <i class="fa-solid fa-music"></i>
+          </a>
+        </p>
+        <form action="/myapi/song" method="post" target="_blank">
+          <p>Submit a song:</p>
+          <input id="api-title" class="api-input" type="text" name="title" placeholder="title" required/>
+          <input id="api-artist" class="api-input" type="text" name="artist" placeholder="artist" required/>
+          <input id="api-submitted-by" class="api-input" type="text" name="submitted_by" placeholder="submitted by..." required/>
+          <input id="api-comment" class="api-input" type="text" name="comment" placeholder="comment" required/>
+          <br>
+          <input type="submit" id="song-submit" class="api-submit" value="Submit" />
+        </form>
+      </div>
+
+      <div id="ip" class="portfolio-item" >
+        <div style="position: absolute; top: -20vh; left: 0"></div>
+
+        <h3>Client IP API</h3>
+        <p>This API retrieves data from you, the client, when you make an HTTP request by clicking the link below. </p>
+        <p>
+          <a href="/myapi/whoami" target="_blank" class="api-link" style="text-decoration: none;">Get my IP info
+            <i class="fa-solid fa-house-signal"></i>
+          </a>
+        </p>
+      </div>
+
+      <div id="date" class="portfolio-item">
+        <div style="position: absolute; top: -20vh; left: 0"></div>
+        <h3>Unix Time Converter</h3>
+        <p>Unix time is the number of seconds since January 1st, 1970, GMT.</p>
+        <p>Since it can be represented as a single number, it is often used in programming.</p>
+        <p>You can
+          <a href="/myapi/date" target="_blank" class="api-link" style="text-decoration: none;">
+          get the time for today, now
+            <i class="fa-solid fa-calendar-days"></i>
+          </a>
+        <p>
+        </p>
+        <p>Or you can convert it using the input below.</p>
+        <label for="date">It accepts both values in seconds (Unix time), and date values (YYYY.MM.DD)</label>
+        <br>
+        <input type="text" id="date-input" class="api-input" name="date" placeholder="eg 1996.06.06">
+        <br>
+        <input type="submit" id="date-submit" class="api-submit" value="Submit">
+      </div>
+
+      <div id="converter" class="portfolio-item">
+        <div style="position: absolute; top: -20vh; left: 0"></div>
+        <h3>Metric/Imperial Converter</h3>
+        <p>You can use this service to convert values between the Metric and Imperial systems.</p>
+        <p>Although most of the world uses the metric system, countries like the UK and USA still use Imperial.</p>
+        <p>You can convert between miles/kilometres, litres/gallons, and pounds/kilograms</p>
+        <label for="date">Simply type in a number followed by a unit.</label><br>
+        <label for="date">Valid units are mi, km, lbs, kg, l or gal.</label>
+        <br>
+        <input type="text" id="converter-input" class="api-input" name="date" placeholder="eg. 45lbs"><br>
+        <input type="submit" id="converter-submit" class="api-submit" value="Submit">
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <div id="sidebar-text">
+      <h3>Menu</h3>
+    </div>
+    <div class="line"></div>
+    <div class="menu-projects">
+      <a href="" id="link-to-song" class="sidebar-link">Favourite Song</a>
+      <a href="" id="link-to-ip" class="sidebar-link">Ip Info</a>
+      <a href="" id="link-to-converter" class="sidebar-link">Metric/Imperial</a>
+      <a href="" id="link-to-date" class="sidebar-link">Unix Time</a>
+      <a href="/simple" style="color: #8f2d56;">Home</a>
+    </div>
+    <div class="menu-container">
+      <div class="menu-lower">
+        <a href="/simple#skills" id="link-to-skills">Skills</a>
+        <a href="/simple#certifications" id="link-to-certifications">Certifications</a>
+        <a href="/simple#about" id="link-to-about">About me</a>
+        <a href="/simple#contact" id="link-to-contact">Contact</a>
+
+      </div>
+      <a href="/" >🦑 Ocean Mode</a>
+    </div>
+    <div id="sidebar-button">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      <div id="menu">
+        <span class="char" id="char1">M</span>
+        <span class="char" id="char2">e</span>
+        <span class="char" id="char3">n</span>
+        <span class="char" id="char4">u</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./javascript/myapi.js" type="module"></script>
+</body>
+</html>
