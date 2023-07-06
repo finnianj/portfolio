@@ -4,3 +4,4 @@ ignorePublic
 .vercelignore
 .env
 public
+dist
